@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>virtualbox.org &bull; View topic - SOLVED - Automatic resizing of Screen resolution</title>
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forums.virtualbox.org; secure';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="./style.php?id=1&amp;lang=en&amp;sid=596b08042e3eb38bb79948d31bdae63f" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./index.php?sid=596b08042e3eb38bb79948d31bdae63f" title="Board index" id="logo"><img src="./styles/prosilver/imageset/vbox_94px.png" alt="Board index" title="Board index" /></a>
+				<h1>virtualbox.org</h1>
+				<p>End user forums for VirtualBox</p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php?sid=596b08042e3eb38bb79948d31bdae63f" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search‚Ä¶" onclick="if(this.value=='Search‚Ä¶')this.value='';" onblur="if(this.value=='')this.value='Search‚Ä¶';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php?sid=596b08042e3eb38bb79948d31bdae63f" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="596b08042e3eb38bb79948d31bdae63f" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./index.php?sid=596b08042e3eb38bb79948d31bdae63f" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./viewforum.php?f=13&amp;sid=596b08042e3eb38bb79948d31bdae63f">Guest systems</a> <strong>&#8249;</strong> <a href="./viewforum.php?f=2&amp;sid=596b08042e3eb38bb79948d31bdae63f">Windows Guests</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=2&amp;t=68966&amp;sid=596b08042e3eb38bb79948d31bdae63f&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php?sid=596b08042e3eb38bb79948d31bdae63f" title="Frequently Asked Questions">FAQ</a></li>
+				
+					<li class="icon-logout"><a href="./login.html" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./viewtopic.php?f=2&amp;t=68966&amp;sid=596b08042e3eb38bb79948d31bdae63f">SOLVED - Automatic resizing of Screen resolution</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Discussions about using Windows guests in VirtualBox.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=2&amp;t=68966&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php?sid=596b08042e3eb38bb79948d31bdae63f">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic‚Ä¶" onclick="if(this.value=='Search this topic‚Ä¶')this.value='';" onblur="if(this.value=='')this.value='Search this topic‚Ä¶';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="68966" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="596b08042e3eb38bb79948d31bdae63f" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			9 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p328589" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=328589&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="#p328589">SOLVED - Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=328589&amp;sid=596b08042e3eb38bb79948d31bdae63f#p328589"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a></strong> &raquo; 17. Jul 2015, 09:55 </p>
+
+			
+
+			<div class="content">Hi all,<br /><br />I'm running VirtualBox 4.3.30 on a Windows 8.1 host. As guestsystem I have Windows 8.1. and Sever 2012 installed. In both guests it is no longer possible to have an automatic resizing of the guest resolution. The max resolution is 1280 x 1024. Windows doesn't let me choose any higher resolution.<br /><br />The guest additions are installed!<br /><br />With version 4.3.20 everything worked fine. After upgrading from version 4.3.20 to 4.3.28 the problem started. With 4.3.30 the problem still exist<br /><br />I tried everything I found in the forums (enable/disable 3d and 2d support, added cuatom video mode, ...) but no success. AS a workaround I start the guest and then connect via RDP.<br /><br />Any ideas?<br /><br />willi</div>
+
+			
+				<div class="notice">Last edited by <a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a> on 24. Jul 2015, 14:05, edited 1 time in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile328589">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 17. Jul 2015, 09:44</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p328601" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=328601&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p328601">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=328601&amp;sid=596b08042e3eb38bb79948d31bdae63f#p328601"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=17541&amp;sid=596b08042e3eb38bb79948d31bdae63f" style="color: #00AA00;" class="username-coloured">mpack</a></strong> &raquo; 17. Jul 2015, 12:31 </p>
+
+			
+
+			<div class="content">You say that you can't resize.  Do you actually mean that you <span style="font-style: italic">can</span> resize, but you can't go larger than 1280x1024?<br /><br />If yes, then I had that problem with VirtualBox 4.3.12, so really this is not a VBox version issue.<br /><br />Though you have not said so, I'm going to guess that your host PC has a widescreen monitor. It would be nice to know its display size. I'm guessing that 1024 is close to the full height of your display.<br /><br />The problem is that your Windows guests think that the <span style="font-style: italic">virtual</span> monitor is 4:3, so they are helpfully disallowing any display modes that use a widescreen ratio. This constraint is now stored in the windows registry somewhere, so you need to go through a few hoops to get around it.<br /><br /><ol style="list-style-type: decimal"><li>First, make sure you are not in fullscreen mode: i.e. switch to your windowed 1280x1024 mode (or whatever windowed mode suits you).</li><li>IMPORTANT. Make sure that <span style="font-style: italic">View|Auto resize guest display</span> is enabled (checked).</li><li>Make sure that the Guest Additions are <span style="font-style: italic">installed</span>, not merely having the GAs CD mounted. If they are installed then there should be an icon on the guest taskbar which will tell you the GAs version and status.</li><li>Carefully drag the bottom edge of the VM window to reduce the screen height.  You are trying to achieve a 16:9 ratio, so with a 1280 display width you want a display height of 720, exactly.</li><li>Shut down the VM completely (not suspend), then restart it. We want windows to start up, seeing a 16:9 ratio while booting up. This should make it happy to accept other 16:9 ratios.</li></ol>As a test, it should now be possible to go fullscreen, or to use seamless mode without artifacts. But, be careful about resizing the VM again using the guests display properties.  IME Windows may still be confused about display sizes - I think it keeps a list somewhere of display sizes known to work with the current monitor, so now it will have a mix of 4:3 and 16:9 ratios, and you want to avoid the former. You may have to manually create new display size hints, but it should at least now be allowing you to choose larger widescreen ratios.<br /><br />p.s. I don't know where you saw advice to fiddle with 2D/3D support. That's a virtual graphics card feature, nothing to do with your virtual monitor at all!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile328601">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=17541&amp;sid=596b08042e3eb38bb79948d31bdae63f" style="color: #00AA00;" class="username-coloured">mpack</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 19693</dd><dd><strong>Joined:</strong> 4. Sep 2008, 17:09</dd>
+			<dd><strong>Primary OS:</strong> MS Windows XP</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Mostly XP</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p328608" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=328608&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p328608">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=328608&amp;sid=596b08042e3eb38bb79948d31bdae63f#p328608"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a></strong> &raquo; 17. Jul 2015, 13:10 </p>
+
+			
+
+			<div class="content">I can resize the window but the screen resolution keeps stucks at a max of 1280x1024. The resolution of the host is 1600x900 or 1920x1200 (=external monitor).I'll try your suggestions and give feedback</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile328608">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 17. Jul 2015, 09:44</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p328610" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=328610&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p328610">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=328610&amp;sid=596b08042e3eb38bb79948d31bdae63f#p328610"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a></strong> &raquo; 17. Jul 2015, 13:22 </p>
+
+			
+
+			<div class="content"><blockquote class="uncited"><div>Make sure that the Guest Additions are installed, not merely having the GAs CD mounted. If they are installed then there should be an icon on the guest taskbar which will tell you the GAs version and status.</div></blockquote><br /><br />I see a couple of icons (harddrive, network card, ...) but no special icon which shows the GAs versions. Where exactly ist that icon? According to the Windows installed programs the GAs are installed.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile328610">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 17. Jul 2015, 09:44</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p328620" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=328620&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p328620">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=328620&amp;sid=596b08042e3eb38bb79948d31bdae63f#p328620"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=17541&amp;sid=596b08042e3eb38bb79948d31bdae63f" style="color: #00AA00;" class="username-coloured">mpack</a></strong> &raquo; 17. Jul 2015, 15:13 </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>willib2013 wrote:</cite>I see a couple of icons (harddrive, network card, ...) but no special icon which shows the GAs versions.</div></blockquote><br />See the image below. Hover the mouse cursor over that icon. Check your notification area settings, perhaps the icon was has been hidden away in your Windows image.</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=17971&amp;sid=596b08042e3eb38bb79948d31bdae63f" alt="GAs_icon.png" onclick="viewableArea(this);" /></dt>
+			
+			<dd>GAs_icon.png (6.27 KiB) Viewed 11617 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile328620">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=17541&amp;sid=596b08042e3eb38bb79948d31bdae63f" style="color: #00AA00;" class="username-coloured">mpack</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 19693</dd><dd><strong>Joined:</strong> 4. Sep 2008, 17:09</dd>
+			<dd><strong>Primary OS:</strong> MS Windows XP</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Mostly XP</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p328673" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=328673&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p328673">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=328673&amp;sid=596b08042e3eb38bb79948d31bdae63f#p328673"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=40434&amp;sid=596b08042e3eb38bb79948d31bdae63f">jorgensen</a></strong> &raquo; 17. Jul 2015, 22:26 </p>
+
+			
+
+			<div class="content">Had the same problem after upgrading to VB 5, and it turned out to be a setting I was not aware of.<br />Not sure if this is new to VB5 - see attachment.</div>
+
+			
+				<dl class="attachbox">
+					<dt>Attachments</dt>
+					
+						<dd>
+		<dl class="file">
+			<dt class="attach-image"><img src="./download/file.php?id=17983&amp;sid=596b08042e3eb38bb79948d31bdae63f" alt="VB resize.png" onclick="viewableArea(this);" /></dt>
+			
+			<dd>VB resize.png (31.09 KiB) Viewed 11606 times</dd>
+		</dl>
+		</dd>
+					
+				</dl>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile328673">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=40434&amp;sid=596b08042e3eb38bb79948d31bdae63f">jorgensen</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 496</dd><dd><strong>Joined:</strong> 20. Oct 2009, 01:22</dd>
+			<dd><strong>Primary OS:</strong> MS Windows XP</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Windows, LinuxMint, Mac</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p328681" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=328681&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p328681">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=328681&amp;sid=596b08042e3eb38bb79948d31bdae63f#p328681"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=17541&amp;sid=596b08042e3eb38bb79948d31bdae63f" style="color: #00AA00;" class="username-coloured">mpack</a></strong> &raquo; 18. Jul 2015, 00:45 </p>
+
+			
+
+			<div class="content">In fact that option has been around for a while. Indeed I mention it in step 2 above.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile328681">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=17541&amp;sid=596b08042e3eb38bb79948d31bdae63f" style="color: #00AA00;" class="username-coloured">mpack</a>
+			</dt>
+
+			<dd>Site Moderator</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 19693</dd><dd><strong>Joined:</strong> 4. Sep 2008, 17:09</dd>
+			<dd><strong>Primary OS:</strong> MS Windows XP</dd>
+		
+			<dd><strong>VBox Version:</strong> PUEL</dd>
+		
+			<dd><strong>Guest OSses:</strong> Mostly XP</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p329152" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=329152&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p329152">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=329152&amp;sid=596b08042e3eb38bb79948d31bdae63f#p329152"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a></strong> &raquo; 21. Jul 2015, 21:24 </p>
+
+			
+
+			<div class="content">@mpack: I tried your steps but that didn't help. After restarting the VM and going to fullscreen the resolution is set to 1152x864.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile329152">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 17. Jul 2015, 09:44</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p329477" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=2&amp;p=329477&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="#p329477">Re: Automatic resizing of Screen resolution</a></h3>
+			<p class="author"><a href="./viewtopic.php?p=329477&amp;sid=596b08042e3eb38bb79948d31bdae63f#p329477"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a></strong> &raquo; 24. Jul 2015, 14:04 </p>
+
+			
+
+			<div class="content">I found a solution which worked for me here: <a href="http://askubuntu.com/questions/211163/virtualbox-how-do-i-change-guest-precise-resolution-to-169-1920x1080-inste" class="postlink">http://askubuntu.com/questions/211163/virtualbox-how-do-i-change-guest-precise-resolution-to-169-1920x1080-inste</a><br /><br /><blockquote class="uncited"><div><br />Go To the 'File' menu, and activate 'Environment setting (P)'. Select 'Display', and change the setting for 'Maximum guest screen size' to 'hint', which allows you to set an arbitrary size for both width and height (eg., 1920 and 1200).<br /><br />Reboot the virtual machine and enjoy it.<br /></div></blockquote><br /><br />I just set the 'Maximum guest screen size' to 'none'. Now the automatic resizing (Host+G) works like before<br /><br />Thanks for your input</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile329477">
+			<dt>
+				<a href="./memberlist.php?mode=viewprofile&amp;u=94078&amp;sid=596b08042e3eb38bb79948d31bdae63f">willib2013</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 5</dd><dd><strong>Joined:</strong> 17. Jul 2015, 09:44</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=2&amp;t=68966&amp;sid=596b08042e3eb38bb79948d31bdae63f">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=2&amp;t=68966&amp;sid=596b08042e3eb38bb79948d31bdae63f" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			9 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./viewforum.php?f=2&amp;sid=596b08042e3eb38bb79948d31bdae63f" class="left-box left" accesskey="r">Return to Windows Guests</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php?sid=596b08042e3eb38bb79948d31bdae63f" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="12">General</option>
+			
+				<option value="23">&nbsp; &nbsp;Howtos and Tutorials</option>
+			
+				<option value="24">&nbsp; &nbsp;&nbsp; &nbsp;Rules and FAQ</option>
+			
+				<option value="35">&nbsp; &nbsp;&nbsp; &nbsp;Generic Advice</option>
+			
+				<option value="31">&nbsp; &nbsp;&nbsp; &nbsp;Building VirtualBox</option>
+			
+				<option value="25">&nbsp; &nbsp;&nbsp; &nbsp;Windows Hosts</option>
+			
+				<option value="26">&nbsp; &nbsp;&nbsp; &nbsp;Linux Hosts</option>
+			
+				<option value="27">&nbsp; &nbsp;&nbsp; &nbsp;Other Hosts</option>
+			
+				<option value="28">&nbsp; &nbsp;&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="29">&nbsp; &nbsp;&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="30">&nbsp; &nbsp;&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="1">&nbsp; &nbsp;Using VirtualBox</option>
+			
+				<option value="6">&nbsp; &nbsp;VirtualBox on Windows Hosts</option>
+			
+				<option value="38">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Windows pre-releases</option>
+			
+				<option value="7">&nbsp; &nbsp;VirtualBox on Linux Hosts</option>
+			
+				<option value="8">&nbsp; &nbsp;VirtualBox on Mac OS X Hosts</option>
+			
+				<option value="39">&nbsp; &nbsp;&nbsp; &nbsp;VirtualBox on Mac OS X pre-releases</option>
+			
+				<option value="11">&nbsp; &nbsp;VirtualBox on Solaris Hosts</option>
+			
+				<option value="40">&nbsp; &nbsp;VirtualBox on Other Hosts</option>
+			
+				<option value="9">&nbsp; &nbsp;Suggestions</option>
+			
+				<option value="32">&nbsp; &nbsp;Third Party Applications</option>
+			
+				<option value="13">Guest systems</option>
+			
+				<option value="2" selected="selected">&nbsp; &nbsp;Windows Guests</option>
+			
+				<option value="3">&nbsp; &nbsp;Linux Guests</option>
+			
+				<option value="20">&nbsp; &nbsp;Solaris Guests</option>
+			
+				<option value="22">&nbsp; &nbsp;Mac OS X Guests</option>
+			
+				<option value="4">&nbsp; &nbsp;Other Guests</option>
+			
+				<option value="14">Deutschsprachige Anwender</option>
+			
+				<option value="5">&nbsp; &nbsp;Allgemeine Diskussionen</option>
+			
+				<option value="33">VirtualBox Programming</option>
+			
+				<option value="34">&nbsp; &nbsp;The VirtualBox API</option>
+			
+				<option value="10">&nbsp; &nbsp;VirtualBox OSE</option>
+			
+				<option value="17">Special Purpose</option>
+			
+				<option value="15">&nbsp; &nbsp;VirtualBox Beta / Release Candidate Feedback</option>
+			
+				<option value="36">&nbsp; &nbsp;&nbsp; &nbsp;Pre-Beta 5 Postings</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+
+	<h3>Who is online</h3>
+	<p>Users browsing this forum: <span style="color: #9E8DA7;" class="username-coloured">Bing [Bot]</span> and 11 guests</p>
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./index.php?sid=596b08042e3eb38bb79948d31bdae63f">Board index</a></li>
+				
+			<li class="rightside"><a href="./memberlist.php?mode=leaders&amp;sid=596b08042e3eb38bb79948d31bdae63f">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies&amp;sid=596b08042e3eb38bb79948d31bdae63f">Delete all board cookies</a> &bull; All times are UTC + 1 hour [ <abbr title="Daylight Saving Time">DST</abbr> ]</li>
+		</ul>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+ 		<div class="copyright" style="align: center;">
+ 	<table class="footer" cellpadding="5" cellspacing="5" width="100%">
+ 	  <tbody>
+ 	    <tr style="text-align: center;" valign="top">
+ 	      <td>Get VirtualBox<br />
+ 	        <a href="http://www.virtualbox.org/wiki/Downloads">
+ 	          <img src="/styles/prosilver/imageset/vbox_footer_logo.png" alt="Get VirtualBox" height="35"  width="108" /></a>
+ 	      </td>
+ 	      <td>
+ 	        Forum powered by <a href="http://www.phpbb.com/">phpBB</a> &copy; phpBB Group
+		
+ 	        <br />By any use of this Website, you agree to be bound by these <br />
+ 	        <big><b><a href="http://www.oracle.com/us/legal/terms/index.html">Policies and Terms of Use</a></b></big>
+ 	      </td>
+ 	      <td>Sponsored by<br />
+                 <a href="http://www.oracle.com/">
+ 	          <img src="/styles/prosilver/imageset/logo_oracle_footer.gif" height="29" width="100" alt="Sponsored by ORACLE" /></a>
+ 	      </td>
+ 	    </tr> 
+ 	  </tbody>
+ 		 </table>
+	</div>
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>ﬁà#âç      V§*V§+<ß       8:https://forums.virtualbox.org/viewtopic.php?f=2&t=68966 necko:classified 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sat, 23 Jan 2016 23:39:23 GMT
+Server: Oracle-Application-Server-11g
+Cache-Control: private, no-cache="set-cookie"
+Expires: 0
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Content-Language: en
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 28 predictor::https://forums.virtualbox.org/styles/prosilver/template/styleswitcher.js 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/template/forum_fn.js 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/print.css 1,1,1453592362,0 predictor::https://forums.virtualbox.org/style.php?id=1&lang=en&sid=596b08042e3eb38bb79948d31bdae63f 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/normal.css 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/imageset/vbox_94px.png 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/imageset/icon_post_target.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/download/file.php?id=17971&sid=596b08042e3eb38bb79948d31bdae63f 1,1,1453592362,0 predictor::https://forums.virtualbox.org/download/file.php?id=17983&sid=596b08042e3eb38bb79948d31bdae63f 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/imageset/vbox_footer_logo.png 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/imageset/logo_oracle_footer.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/medium.css 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/bg_header.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/corners_left.png 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/corners_right.png 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/icon_textbox_search.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/bg_button.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/icon_home.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/icon_fontsize.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/icon_print.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/icon_faq.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/icon_logout.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/imageset/en/button_topic_reply.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/imageset/en/icon_post_quote.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/imageset/icon_back_top.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/quote.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/images/arrow_left.gif 1,1,1453592362,0 predictor::https://forums.virtualbox.org/styles/prosilver/theme/large.css 1,1,1453592362,0   Ü

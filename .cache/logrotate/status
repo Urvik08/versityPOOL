@@ -1,0 +1,20 @@
+logrotate state -- version 2
+"/home/urvik/.cache/upstart/update-notifier-release.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/dbus.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/gnome-keyring-ssh.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/unity7.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/hud.log" 2016-1-23-18:4:20
+"/home/urvik/.cache/upstart/indicator-power.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/indicator-bluetooth.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/update-notifier-crash-_var_crash__usr_bin_compiz.1000.crash.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/ssh-agent.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/indicator-sound.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/unity-panel-service.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/at-spi2-registryd.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/indicator-printers.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/gnome-keyring-gpg.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/unity-settings-daemon.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/update-notifier-cds.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/im-config.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/gnome-session-Unity.log" 2016-1-23-19:3:8
+"/home/urvik/.cache/upstart/window-stack-bridge.log" 2016-1-23-18:4:20

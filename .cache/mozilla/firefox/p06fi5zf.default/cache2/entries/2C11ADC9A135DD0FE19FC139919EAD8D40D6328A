@@ -1,0 +1,116 @@
+try{window.parent._dv_win['dvCallback_1453633697772573']($dv,window,'caa4d71ca7ed4bc985491c68bf8f5ead','tps10208.doubleverify.com');}catch(e){try{var image=window.document.createElement('img');image.src=window.location.protocol+'//tps30.doubleverify.com/visit.jpg?ctx=818052&cmp=1619415&dvtagver=6.1.src&dvp_cbError='+encodeURIComponent(e.message)}catch(e){}}$dv.pubSub.subscribe('ImpressionServed', $uid, 'RTN_LatencyTemp', function () {try {var beforeVisitCall = '';var templateStartTime = parent.getCurrentTime();var dv_win = parent.window._dv_win;if (dv_win && dv_win.t2tTimestampData) {if (dv_win.t2tTimestampData.length >= 2) {beforeVisitCall = dv_win.t2tTimestampData[1].beforeVisitCall;}}var latency = 0;if (beforeVisitCall != '' && templateStartTime != '') {latency = templateStartTime - beforeVisitCall;}if(latency > 1000 && latency < 90000) {$dv.registerEventCall($uid, { dvp_ltncy: latency });}} catch (e) {};});$dv.tags[$uid].set({is_projected_viewability: 0, projected_view_rate: '', projected_error_rate: ''});$dv.CommonData.deviceType = 1;function IVCallback(ViewAssureBootstrapper) {if(ViewAssureBootstrapper && typeof(ViewAssureBootstrapper)==='function'){ViewAssureBootstrapper({"protocol":"https://","serverSettings":{"protocol":"https://","templateVersion":"9","TKH":"8732766027284151862"}});}else{new dv_InViewService({"protocol":"https://"}).inViewManager();}};if(Math.random()*100 < 50) {document.write('<scr' + 'ipt src="https://cdn.doubleverify.com/avs564.js" type="text/javascript"></scr' + 'ipt>');} else {document.write('<scr' + 'ipt src="https://cdn.doubleverify.com/avs565.js" type="text/javascript"></scr' + 'ipt>');}$dv.pubSub.subscribe ('ImpressionServed', $uid, 'SendAdEntitiesForMA', function() {var tag = $dv.tags[$uid];var targetWin = tag.t2tIframeWindow;if(!targetWin){var t2tIframeId = tag.t2tIframeId;if(t2tIframeId){var iFrame = window.parent.getElementById(t2tIframeId);if(iFrame){targetWin = iFrame.contentWindow;}}}if(targetWin){var dateNow = 0;if(Date.now){dateNow = Date.now();} else {dateNow = +new Date();}var message = {action : 'notifyMultipleAdsAdEntityInformationReady',adEntityInformation : {comparisonItems : [{name : 'cmp', value : 2849767, bitFlag : 1, maxTimeMS : 5000, eventToFire : 'CampaignMultipleAd'},{name : 'clcd', value : 2821932, bitFlag : 2, maxTimeMS : 5000},{name : 'plmt', value : 3179679, bitFlag : 4, maxTimeMS : 5000},{name : 'mp', value : 3168, bitFlag : 8, maxTimeMS : 5000},{name : 'adv', value : 2821933, bitFlag : 16, maxTimeMS : 5000, eventToFire : 'LobMultipleAd'},{name : 'cmpMP', value : 854930122176, bitFlag : 32, maxTimeMS : 5000}],dvTagCreatedTS : tag.t2tIframeCreationTime,visitJSPostMessageTS : dateNow}};var stringifyFunc = null;if(window.JSON){stringifyFunc = window.JSON.stringify;} else {if(window.parent && window.parent.JSON){stringifyFunc = window.parent.JSON.stringify;}}if(!stringifyFunc){return;}var msgString = stringifyFunc(message);targetWin.postMessage(msgString, '*');setTimeout(function(){targetWin.postMessage(msgString, '*');}, 100);setTimeout(function(){targetWin.postMessage(msgString, '*');}, 500);}});    	$dv.pubSub.subscribe ('ImpressionServed', $uid, 'SendAdEntitiesForBSBAConsolidation', function() {
+            'use strict';
+            var stringifyFunc = null;
+			if(window.JSON){
+				stringifyFunc = window.JSON.stringify;
+			} else {
+				if(window.parent && window.parent.JSON){
+					stringifyFunc = window.parent.JSON.stringify;
+				}
+			}
+			if(!stringifyFunc){
+				return;
+			}
+            var targetWin;
+            var tag = $dv.tags[$uid];
+            var bsmsg = {
+                action : 'notifyBrandShieldAdEntityInformation',
+                bsAdEntityInformation : {
+                    comparisonItems : [{name : 'cmp', value : 2849767},{name : 'plmt', value : 3179679}], verboseReporting : false  }
+            };
+            var bsstring = stringifyFunc(bsmsg);
+
+            var findAndSend = function(){
+                if(!targetWin) {
+                    if (tag) {
+                        targetWin = tag.t2tIframeWindow;
+                        if (!targetWin) {
+                            var t2tIframeId = tag.t2tIframeId;
+                            //get t2t window and post the AdEntities to it.
+                            if (t2tIframeId) {
+                                var iFrame = window.parent.getElementById(t2tIframeId);
+                                if (iFrame) {
+                                    targetWin = iFrame.contentWindow;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if(targetWin){
+                    targetWin.postMessage(bsstring, '*');
+                }
+            };
+
+            findAndSend();
+            setTimeout(findAndSend, 100);
+            setTimeout(findAndSend, 500);
+        });$dv.pubSub.subscribe('ImpressionServed', $uid, 'HdnAd', function () {	var vaVersion = '484';	var haJSVer = '6';	var brid = 2;	var numOfConsecutiveIterations = 2;		function loadAvs(){			function isAvsScriptLoaded(){			var scripts = document.getElementsByTagName("script");			for (var i = 0; i < scripts.length; i++) {				var script = scripts[i];				if (script.src.indexOf('cdn.doubleverify.com/avs') > -1) {					return true;				}				return false;			}		};		if(typeof window.IVCallback === "undefined" && !isAvsScriptLoaded()){						window.IVCallback = function(ViewAssureBootstrapper) {				if (ViewAssureBootstrapper && typeof (ViewAssureBootstrapper) === 'function') {					ViewAssureBootstrapper({													"isReportingDisabled": true,						"isRTNsDisabled" : true					});				} 			};						document.write('<scr' + 'ipt type="text/javascript" src="' + $dv.tags[$uid].dv_protocol + '//cdn.doubleverify.com/avs' + vaVersion + '.js"></script>');					}		};			function loadHa(){		window.HaSettingsObj = {			"brid":brid, 			"numOfConsecutiveIterations":numOfConsecutiveIterations		};				document.write('<scr' + 'ipt type="text/javascript" src="' + $dv.tags[$uid].dv_protocol  + '//cdn.doubleverify.com/ha' + haJSVer + '.js"></script>');	};		loadAvs();		loadHa();});(function () {                                                                               
+                                        var tag = $dv.tags[$uid];
+                                        var allowedRetries = 13;
+                                        var retries = 0;
+                                        var vaVersion = 546;                                        
+                                        
+                                        function isNumeric(n) {
+                                          return !isNaN(parseFloat(n)) && isFinite(n);
+                                        }
+
+                                        function loadAvs() {                    
+                                            function isAvsScriptLoaded() {
+                                                var scripts = document.getElementsByTagName("script");
+                                                for (var i = 0; i < scripts.length; i++) {
+                                                    var script = scripts[i];
+                                                    if (script.src.indexOf('cdn.doubleverify.com/avs') > -1) {
+                                                        return true;
+                                                    }
+                                                    return false;
+                                                }
+                                            };
+                                            if (typeof window.IVCallback === "undefined" && !isAvsScriptLoaded()) {
+                                                window.IVCallback = function (ViewAssureBootstrapper) {
+                                                    if (ViewAssureBootstrapper && typeof (ViewAssureBootstrapper) === 'function') {
+                                                        ViewAssureBootstrapper({
+                                                            'videoEnable': true,
+                                                            'detectVideoPlayer': true,                                                            
+                                                            'isRTNsDisabled':true
+                                                        });
+                                                    }
+                                                };
+                                                document.write('<scr' + 'ipt type="text/javascript" src="' + $dv.tags[$uid].dv_protocol + '//cdn.doubleverify.com/avs' + vaVersion + '.js"></script>');
+                                            }
+                                        };
+
+                                        loadAvs();
+
+                                        (function () {
+                                            var currentInterval = setInterval(function () {
+                                                if (retries < allowedRetries) {
+                                                    retries++;
+                                                    if (tag.VA && tag.VA.getVisibilityResult && typeof tag.VA.getVisibilityResult == 'function') {                                                                                            
+                                                    var results = tag.VA.getVisibilityResult();                                                       
+                                                    if (results.adWidth && results.adHeight && isNumeric(results.adWidth) && isNumeric(results.adHeight)) {
+                                                        $dv.registerEventCall($uid, {
+                                                            'dvp_spw': results.adWidth,
+                                                            'dvp_sxh': results.adHeight
+                                                        });
+                                                    clearInterval(currentInterval);
+                                                    };                                                       
+                                                    }
+                                                } else {
+                                                    clearInterval(currentInterval);
+                                                    if($dv)
+                                                    {
+                                                        $dv.registerEventCall($uid, {'dvp_spxn': 1});
+                                                    }
+                                                }
+                                            }, 500);
+                                        })();
+                                    })();var impId = 'caa4d71ca7ed4bc985491c68bf8f5ead';var dvObj = $dv;var rtnName = dvObj==window.$dv ? 'ImpressionServed' : 'BeforeDecisionRender';dvObj.pubSub.subscribe(rtnName, impId, 'HE_RTN', function () { try {var lbl='';var f=dvObj==window.$dv,g=f?parent:window,h=dvObj.tags[impId].protocol+'/'+'/'+(dvObj.tags[impId].ServerPublicDns||dvObj.tags[impId].serverPublicDns)+'/'+(f?'event':'bsevent')+'.gif?impid='+impId,i=0,j=[];function k(a,c){function b(){if(!n[c]&&(rhe(c),n[c]=!0,a))for(var d=0;d<e.length;d++)a.removeEventListener?a.removeEventListener(e[d],b):a.detachEvent?a.detachEvent('on'+e[d],b):a['on'+e[d]]=void 0}var e='click input change focus keyup textInput keypress paste'.split(' '),n=[];n[c]=!1;if(a)for(var d=0;d<e.length;d++)a.addEventListener?a.addEventListener(e[d],b,!0):a.attachEvent?a.attachEvent('on'+e[d],b):a['on'+e[d]]=b}window.rhe=function(a){var c='';'number'===typeof a&&void 0==j[a]&&(j[a]=!0,i+=a,c='&'+lbl+'heas='+i);dvObj.domUtilities.addImage(h+'&'+lbl+'hea=1'+c,dvObj.tags[impId].tagElement.parentNode)};g.rhe=rhe;function l(a,c){var b=document.createElement(a);b.id=(c||a)+'-'+impId;b.style.visibility='hidden';b.style.position='absolute';return b}function m(a){var c=o;Object.defineProperty(c,a,{get:function(){return this.getAttribute(a)},set:function(b){this.setAttribute(a,b);'createEvent'in document?(b=document.createEvent('HTMLEvents'),b.initEvent('change',!1,!0),c.dispatchEvent(b)):(b=document.createEventObject(),c.fireEvent('onchange',b))}})}var p=l('form');p.submit=function(){window.rhe(1)};var o=l('input','txt');o.name=o.id;o.type='text';m('value');m('textContent');var q=l('input','btn');q.name=q.id;q.type='button';var r=l('input','sbmt');r.name=r.id;r.type='submit';r.click=function(){window.rhe(2)};var s=l('a');s.href='javascript:window.rhe(16);';g.document.body.insertBefore(p,null);g.document.body.insertBefore(s,null);p.insertBefore(o,null);p.insertBefore(q,null);p.insertBefore(r,null);k(o,8);k(q,4);k(r,2);k(p,1);} catch (e) {}; });$dv.tags[$uid].set({"billable":{adArea: 100, duration: 100}});try{$dv.pubSub.publish('ImpressionServed', $uid);}catch(e){}Ššoº|À      V¤°¡V¤°¢<{“      :https://tps30.doubleverify.com/visit.js?ctx=2821932&cmp=11042208891951&ipos=&sid=11182200629109&plc=11042209007704&adid=&crt=11042209002851&btreg=11042209007704&btadsrv=atdmt&adsrv=2&advid=11042201430398&num=&pid=&crtname=&unit=&chnl=&uid=1453633697767629&scusrid=&tagtype=&sr=&dt=&isdvvid=&dvtagver=6.1.src&srcurlD=3&curl=&qpgid=&ssl=1&refD=4&htmlmsging=1&aUrlD=4&jsver=69&eparams=DC4FC%3Dl9EEADTbpTauTau%3F2%5D25D%5DJ29%40%40%5D4%40%3ETauJ2ITau32%3F%3F6CTbuG6Tbs%60TaeEETbsbTaeD%3ATbs%60g%60g_gdd%60Tae%3E682%3E%4052%3DTbsTacTfq%7Ctvp%7C~sp%7BTfsTae3F4%3C6ETbsTacTfq*%5Cq%26rzt%25TfsTae2DKTbsb__Ie__TaeFTbs9EEADTbpTauTauD%5DJ%3A%3E8%5D4%40%3ETauCBTau52C%3D2Taua%5Cg%5ChTau9E%3E%3DTauC%5CD7%5D9E%3E%3DTae85p5x5Tbs%24s4p%26%3Ez%7Bsb8%5CTae85%26F%3A5Tbs399ut%22ppppr%25%60%23AH9%3F)73xI%24F%7B%3F6q%3D2%3CDycps%40%3E5Tae85%24ETbs%60cdbebbehchdaccbTaeAF3%3D%3AD96C03%3D%403Tbs8F%3A5Tbp%226ybIs%3Cc%7B%3BvF%7Cw_r%27B%22%7DCp%27%3D%7C%258_%7B8ppppqbf(zHTbqDA%3A5Tbphfgdb_b_aTbqJA%40DTbp%7C~%7DTbqJA%40DTbp%60cdbebbehb%5DcehheTfr399ut%22ppppr%25%60%23AH9%3F)73xI%24F%7B%3F6q%3D2%3CDycps%40%3E5Tfr%60%60hffa_eehTfr%7C~%7DTfr%60cdbebbehc%5Dh_hh%60%60TfrTacTfq%24tr%26%23t%5Csp%23%7BpTfsTaeAF30C65%3AC64ETbs9EEADTbpTauTau362A%5C34%5DJ29%40%40%5D4%40%3ETauJ4Tau*%3F*h%7C%24cH%7B%3Bp%3E*%3F%7Chzstb2v8c5s%23%3B%7Dr9%3F2(%22%3C*%3E9%40%23%3C%27%23%22%26uq%22%26%7D%26%7C%27yH5a9F(v%2B%3A%24)9%255%26IF%2B%26yD*(EK%24%3B%23q%23vhE%2BrIK5r%22I%7Ds%26K%7D%3B%7CK%7D%3B%3C_~%25%26J%7Ds%22K%7Bw%7DAys%22_%7D%3B%26%60%7D%25tD4bp%3C%7C%25td%7DK4J%7Cs*a~%24I%3B5r%22J%7D%24Id*%3F8%3C6%3E%60%3A*a%60u%26%3D%7DE%7Da9~%2B%3F%7Da%7D_%60%7C*%3Bue%26%24ID3%3E4%3C%2B(cE5)%7CD*bx%3C%7Ds%22b%7C%3B4K%7CKp%60%7C%24IaysxF%7CrI92(%22%3C%26_%23%3B%22%27%27E%24_It%7Ca4E%7BvyAysxJ~s%22_%7DK%7CH%7D%25tD3(%60%3Dys%3Ca%7CKtJ%7Ds%3Ca%7CKxK%7D%3B%26K~stc%7DK%7CD4%3A%22H%7Bw%3DG3J%22I%7Bvu%3F4r%22K%7Ds%3CH%7CK%22%60%7Cs%26I%7BvuHyt%60!%25%3A%3CATau_TauYU2%26C%3Dl9EEADTbpTauTau25%5D2E5%3EE%5D4%40%3ETau%3ATau2%5D9E%3E%3DTbqATbs%60%60_caa_h__ff_cTbq42496Tbsgchdddbhcg_eecahebhTbu4%3D%3A4%3CTbs9EEADTadbpTadauTadau%3F2%5D25D%5DJ29%40%40%5D4%40%3ETadauJ2ITadau4%3D%3CTadbuD%3FTadadbs5g4%605h3c7he4hch63cag2fh7d_6c3%60gba45db4dcTadadae6DTadadbs%7B7v%23*y%3B%23%27x!Ev%3B*9rKaa%26%3A9%7BC5s0%60DBuHd%3D~bu5%3FJ%24vA7%3CI%3CH2z%3AqEBswrdd%3DEa5gauK%3E%3E2aBuy_5%3E%23!I)%26h%3F%26r%3CJK(%7Dxc%23%3Byv%3E%7BrJ%3E!I%26yv%7Cz3pI%7De%2B%3C%40Ic%25pB%60%40s%252_xt%7D%3BI735B%3B9%24%5D%23yFfF%23%3A6EuB%7Ce%27~!J%40z%25cCE*yHuD9w9%24FG%27%3C2%24x!%7D%7C*I%7Ce%40F)%27w%24Kg)Hd%26%3CH0%2223u%250(%24B%5Dtg3wAxHq%5D%3Ad%26w4!gw5(s%60wd2E5!)_BGGHHc%3E%2B(fz%23~!7%266(K8EEq%3F%60h7KbJ%60Bp%233%7B3c5(zr_6%7D%7DE%3DwAy%3AeEapyvc!~%22G%40y%24xJ%7DIKy%23h%23%3F54c%25e5%23besf(!~q%3C4y5%2B%3C8EH%3Ezz%26%22%22sGp33%27%22_%22h%23)%3C%3AB%3ETadadaeG6TadadbsaTadadaeEJTadadbs_TadadaeFC%3DTadadbs9EEATadbpTadauTadauAC%5DJ3A%5DJ29%40%40%5D4%40%3ETadau4%3BTadau45Tadau8%2B%40uf4%24%3Az%23%3E%3BpG%60vCG%26~wbx%7DKb%25f%2Bp9ABfb%7D%3E9hAF%3Fzv3aFeBg~(I%24Ae~%5CGw%7CK7~%3DHc%7D_w2%60Ct~*t(y4%7B3!0q%27%5CdfFJ%5C%26y%3Cs%60b%2B%7CfsGpg2%3Ah%3DD%7D%7B%7C%60_%3F%7C2%27%3Aew%3Ft%7Bq%26zTadauCFC%3DTadau&brid=2&brver=39&bridua=2&tstype=128&jsCallback=dvCallback_1453633697772573 necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8F+O2DZM7ZTG6GukivU8OT5gAAAAAAAAT2MIIE8jCCA9qgAwIBAgIQPA1TW0t0SCIfGdey420jZTANBgkqhkiG9w0BAQsFADB+MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxLzAtBgNVBAMTJlN5bWFudGVjIENsYXNzIDMgU2VjdXJlIFNlcnZlciBDQSAtIEc0MB4XDTE0MTAxMzAwMDAwMFoXDTE4MDEyMDIzNTk1OVowfTELMAkGA1UEBhMCVVMxETAPBgNVBAgMCE5ldyBZb3JrMREwDwYDVQQHDAhOZXcgWW9yazEZMBcGA1UECgwQRG91YmxlVmVyaWZ5IEluYzEQMA4GA1UECwwHVGVjaE9wczEbMBkGA1UEAwwSKi5kb3VibGV2ZXJpZnkuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0KsS6XQfD+UNj4rc9gKzvGry5ZERSmfnImOHwDhsH7sjhfdvMvtayiY5IJmBnG45lVqL0RKJF3OcnH/NAgdelRxuSKRFz1jiyAmDW3znQvZq1+b/gUJQeX0EghsNF6zB1d1wulmJRD9Z+ml294siUGwuCqQIWyll8zQGUSmiDemLjgTZm5UnBSbTkJJel8HZxJV25gZIVwGoGn34RvOOr9e9WKHjujDaInACFuV4QZWvGN5O6pomYHxZGq33tXevjGDTuWMQLYXfmdPKbyDyl9twWLEXm14QjTn6BHPoefFYFoiltYWaoZuG72B0KXlxuYWd1ACbIcb9U9rTJONh2QIDAQABo4IBazCCAWcwHQYDVR0RBBYwFIISKi5kb3VibGV2ZXJpZnkuY29tMAkGA1UdEwQCMAAwDgYDVR0PAQH/BAQDAgWgMCsGA1UdHwQkMCIwIKAeoByGGmh0dHA6Ly9zcy5zeW1jYi5jb20vc3MuY3JsMGUGA1UdIAReMFwwWgYKYIZIAYb4RQEHNjBMMCMGCCsGAQUFBwIBFhdodHRwczovL2Quc3ltY2IuY29tL2NwczAlBggrBgEFBQcCAjAZDBdodHRwczovL2Quc3ltY2IuY29tL3JwYTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwHwYDVR0jBBgwFoAUX2DPYZBV34RDFIpgKrL1evRDGO8wVwYIKwYBBQUHAQEESzBJMB8GCCsGAQUFBzABhhNodHRwOi8vc3Muc3ltY2QuY29tMCYGCCsGAQUFBzAChhpodHRwOi8vc3Muc3ltY2IuY29tL3NzLmNydDANBgkqhkiG9w0BAQsFAAOCAQEAp/A5+0ToXUTPgxGw4oAbd1lmMpH9ZYmq6MmMXXNzKEmj5bKIbl7uTyfGof+vgdQMFQ+rmxg/2OYz5QCW2UeCXoK7miey5qDQha7QX0452TOQaRIfddaJqCelmJSVQLOpRtB26I6EwHS+aJiektrLz3vjz/OA63CezbVjkN4vR7SbuvGCbg688gCNrTrq5a7RMD5aS8bP/xD7LtToKMJGyhGdtfzyBSlxWc78HQiOW/ZoS8eiGJrHmDr6AfwDelMypHRIhCH8IquuGUU1Rcow+03OwoYZ2J1qLEQkmHSkjRzNyNlNSvw4PnefRKXvY6VZfgc9t6W6+5jNPo0vvG7IjQAKAAMAAAAAAQEAAA== request-method GET response-head HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Pragma: no-cache
+Content-Type: text/javascript; charset=utf-8
+Expires: 1/23/2016 11:08:19 AM
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+Date: Sun, 24 Jan 2016 11:08:18 GMT
+ uncompressed-len 0   2û

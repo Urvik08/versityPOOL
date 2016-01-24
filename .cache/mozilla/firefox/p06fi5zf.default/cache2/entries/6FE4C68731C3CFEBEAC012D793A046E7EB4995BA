@@ -1,0 +1,56 @@
+try{window.parent._dv_win['dvCallback_1453632733929959']($dv,window,'faef4c8df37c4ad0b173301ac4a9c26a','tps10235.doubleverify.com');}catch(e){try{var image=window.document.createElement('img');image.src=window.location.protocol+'//tps30.doubleverify.com/visit.jpg?ctx=818052&cmp=1619415&dvtagver=6.1.src&dvp_cbError='+encodeURIComponent(e.message)}catch(e){}}$dv.pubSub.subscribe('ImpressionServed', $uid, 'RTN_LatencyTemp', function () {try {var beforeVisitCall = '';var templateStartTime = parent.getCurrentTime();var dv_win = parent.window._dv_win;if (dv_win && dv_win.t2tTimestampData) {if (dv_win.t2tTimestampData.length >= 2) {beforeVisitCall = dv_win.t2tTimestampData[1].beforeVisitCall;}}var latency = 0;if (beforeVisitCall != '' && templateStartTime != '') {latency = templateStartTime - beforeVisitCall;}if(latency > 1000 && latency < 90000) {$dv.registerEventCall($uid, { dvp_ltncy: latency });}} catch (e) {};});$dv.tags[$uid].set({is_projected_viewability: 0, projected_view_rate: '', projected_error_rate: ''});$dv.CommonData.deviceType = 1;function IVCallback(ViewAssureBootstrapper) {if(ViewAssureBootstrapper && typeof(ViewAssureBootstrapper)==='function'){ViewAssureBootstrapper({"protocol":"http://","serverSettings":{"protocol":"http://","templateVersion":"9","TKH":"-5335663384249411607"}});}else{new dv_InViewService({"protocol":"http://"}).inViewManager();}};if(Math.random()*100 < 50) {document.write('<scr' + 'ipt src="http://cdn.doubleverify.com/avs564.js" type="text/javascript"></scr' + 'ipt>');} else {document.write('<scr' + 'ipt src="http://cdn.doubleverify.com/avs565.js" type="text/javascript"></scr' + 'ipt>');}$dv.pubSub.subscribe('GeoViewed', $uid, 'RTN_GeoViewed', function(){ var tagServiceUrl = decodeURIComponent('https://ad.doubleclick.net/activity;src=1295336;type=cs;cat=Viewa0;u14=[CMP];u15=[SID];u16=[DVP_ADID];ord=1?'); tagServiceUrl = $dv.resolveMacros(tagServiceUrl, $dv.tags[$uid]);  $dv.domUtilities.addImage(tagServiceUrl, $dv.tags[$uid].tagElement.parentElement);});$dv.pubSub.subscribe('GeoViewed', $uid, 'RTN_GeoViewed', function(){ var tagServiceUrl = decodeURIComponent('https://ad.doubleclick.net/ddm/activity/src=1295336;type=custom;cat=viewa2;u1=[TOTALPAGETIME];u2=[BUCKET_0];u3=[BUCKET_1_9];u4=[BUCKET_10_19];u5=[BUCKET_20_29];u6=[BUCKET_30_39];u7=[BUCKET_40_49];u8=[BUCKET_50_59];u9=[BUCKET_60_69];u10=[BUCKET_70_79];u11=[BUCKET_80_89];u12=[BUCKET_90_99];u13=[BUCKET_100];u14=[CMP];u15=[SID];u16=[DVP_ADID];u17=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?'); tagServiceUrl = $dv.resolveMacros(tagServiceUrl, $dv.tags[$uid]);  $dv.domUtilities.addImage(tagServiceUrl, $dv.tags[$uid].tagElement.parentElement);});$dv.pubSub.subscribe('ProjectedAssignedViewed', $uid, 'RTN_ProjectedAssignedViewed', function(){ var tagServiceUrl = decodeURIComponent('https://ad.doubleclick.net/activity;src=1295336;type=cs;cat=Viewa0;u14=[CMP];u15=[SID];u16=[DVP_ADID];ord=1?'); tagServiceUrl = $dv.resolveMacros(tagServiceUrl, $dv.tags[$uid]);  $dv.domUtilities.addImage(tagServiceUrl, $dv.tags[$uid].tagElement.parentElement);});$dv.pubSub.subscribe('ProjectedAssignedViewed', $uid, 'RTN_ProjectedAssignedViewed', function(){ var tagServiceUrl = decodeURIComponent('https://ad.doubleclick.net/ddm/activity/src=1295336;type=custom;cat=viewa2;u1=[TOTALPAGETIME];u2=[BUCKET_0];u3=[BUCKET_1_9];u4=[BUCKET_10_19];u5=[BUCKET_20_29];u6=[BUCKET_30_39];u7=[BUCKET_40_49];u8=[BUCKET_50_59];u9=[BUCKET_60_69];u10=[BUCKET_70_79];u11=[BUCKET_80_89];u12=[BUCKET_90_99];u13=[BUCKET_100];u14=[CMP];u15=[SID];u16=[DVP_ADID];u17=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?'); tagServiceUrl = $dv.resolveMacros(tagServiceUrl, $dv.tags[$uid]);  $dv.domUtilities.addImage(tagServiceUrl, $dv.tags[$uid].tagElement.parentElement);});    	$dv.pubSub.subscribe ('ImpressionServed', $uid, 'SendAdEntitiesForBSBAConsolidation', function() {
+            'use strict';
+            var stringifyFunc = null;
+			if(window.JSON){
+				stringifyFunc = window.JSON.stringify;
+			} else {
+				if(window.parent && window.parent.JSON){
+					stringifyFunc = window.parent.JSON.stringify;
+				}
+			}
+			if(!stringifyFunc){
+				return;
+			}
+            var targetWin;
+            var tag = $dv.tags[$uid];
+            var bsmsg = {
+                action : 'notifyBrandShieldAdEntityInformation',
+                bsAdEntityInformation : {
+                    comparisonItems : [{name : 'cmp', value : 3143958},{name : 'plmt', value : 3144030}], verboseReporting : false  }
+            };
+            var bsstring = stringifyFunc(bsmsg);
+
+            var findAndSend = function(){
+                if(!targetWin) {
+                    if (tag) {
+                        targetWin = tag.t2tIframeWindow;
+                        if (!targetWin) {
+                            var t2tIframeId = tag.t2tIframeId;
+                            //get t2t window and post the AdEntities to it.
+                            if (t2tIframeId) {
+                                var iFrame = window.parent.getElementById(t2tIframeId);
+                                if (iFrame) {
+                                    targetWin = iFrame.contentWindow;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if(targetWin){
+                    targetWin.postMessage(bsstring, '*');
+                }
+            };
+
+            findAndSend();
+            setTimeout(findAndSend, 100);
+            setTimeout(findAndSend, 500);
+        });$dv.pubSub.subscribe('ImpressionServed', $uid, 'HdnAd', function () {	var vaVersion = '484';	var haJSVer = '6';	var brid = 2;	var numOfConsecutiveIterations = 2;		function loadAvs(){			function isAvsScriptLoaded(){			var scripts = document.getElementsByTagName("script");			for (var i = 0; i < scripts.length; i++) {				var script = scripts[i];				if (script.src.indexOf('cdn.doubleverify.com/avs') > -1) {					return true;				}				return false;			}		};		if(typeof window.IVCallback === "undefined" && !isAvsScriptLoaded()){						window.IVCallback = function(ViewAssureBootstrapper) {				if (ViewAssureBootstrapper && typeof (ViewAssureBootstrapper) === 'function') {					ViewAssureBootstrapper({													"isReportingDisabled": true,						"isRTNsDisabled" : true					});				} 			};						document.write('<scr' + 'ipt type="text/javascript" src="' + $dv.tags[$uid].dv_protocol + '//cdn.doubleverify.com/avs' + vaVersion + '.js"></script>');					}		};			function loadHa(){		window.HaSettingsObj = {			"brid":brid, 			"numOfConsecutiveIterations":numOfConsecutiveIterations		};				document.write('<scr' + 'ipt type="text/javascript" src="' + $dv.tags[$uid].dv_protocol  + '//cdn.doubleverify.com/ha' + haJSVer + '.js"></script>');	};		loadAvs();		loadHa();});var impId = 'faef4c8df37c4ad0b173301ac4a9c26a';var dvObj = $dv;var rtnName = dvObj==window.$dv ? 'ImpressionServed' : 'BeforeDecisionRender';dvObj.pubSub.subscribe(rtnName, impId, 'HE_RTN', function () { try {var lbl='';var f=dvObj==window.$dv,g=f?parent:window,h=dvObj.tags[impId].protocol+'/'+'/'+(dvObj.tags[impId].ServerPublicDns||dvObj.tags[impId].serverPublicDns)+'/'+(f?'event':'bsevent')+'.gif?impid='+impId,i=0,j=[];function k(a,c){function b(){if(!n[c]&&(rhe(c),n[c]=!0,a))for(var d=0;d<e.length;d++)a.removeEventListener?a.removeEventListener(e[d],b):a.detachEvent?a.detachEvent('on'+e[d],b):a['on'+e[d]]=void 0}var e='click input change focus keyup textInput keypress paste'.split(' '),n=[];n[c]=!1;if(a)for(var d=0;d<e.length;d++)a.addEventListener?a.addEventListener(e[d],b,!0):a.attachEvent?a.attachEvent('on'+e[d],b):a['on'+e[d]]=b}window.rhe=function(a){var c='';'number'===typeof a&&void 0==j[a]&&(j[a]=!0,i+=a,c='&'+lbl+'heas='+i);dvObj.domUtilities.addImage(h+'&'+lbl+'hea=1'+c,dvObj.tags[impId].tagElement.parentNode)};g.rhe=rhe;function l(a,c){var b=document.createElement(a);b.id=(c||a)+'-'+impId;b.style.visibility='hidden';b.style.position='absolute';return b}function m(a){var c=o;Object.defineProperty(c,a,{get:function(){return this.getAttribute(a)},set:function(b){this.setAttribute(a,b);'createEvent'in document?(b=document.createEvent('HTMLEvents'),b.initEvent('change',!1,!0),c.dispatchEvent(b)):(b=document.createEventObject(),c.fireEvent('onchange',b))}})}var p=l('form');p.submit=function(){window.rhe(1)};var o=l('input','txt');o.name=o.id;o.type='text';m('value');m('textContent');var q=l('input','btn');q.name=q.id;q.type='button';var r=l('input','sbmt');r.name=r.id;r.type='submit';r.click=function(){window.rhe(2)};var s=l('a');s.href='javascript:window.rhe(16);';g.document.body.insertBefore(p,null);g.document.body.insertBefore(s,null);p.insertBefore(o,null);p.insertBefore(q,null);p.insertBefore(r,null);k(o,8);k(q,4);k(r,2);k(p,1);} catch (e) {}; });$dv.tags[$uid].set({"billable":{adArea: 100, duration: 100}});try{$dv.pubSub.publish('ImpressionServed', $uid);}catch(e){}åŽÊ      V¤¬ÝV¤¬Þ<x÷      |:http://tps30.doubleverify.com/visit.js?ctx=1828362&cmp=9234036&ipos=&sid=601237&plc=125325189&adid=&crt=67043152&btreg=298503843&btadsrv=doubleclick&adsrv=1&advid=4157372&num=&pid=&crtname=&unit=&chnl=&uid=1453632733917836&scusrid=&tagtype=&sr=&dt=&isdvvid=&dvtagver=6.1.src&srcurlD=0&curl=&qpgid=&ssl=0&refD=1&htmlmsging=1&aadid=dfb97e57cfdd8168592976e70a349d634c7a46dc&DVP_ADID=298503843&aUrlD=&jsver=69&eparams=DC4FC%3Dl9EEATbpTauTauDA64%3CJ3%40J%5D4%40%3ETaua_%60bTau%60%60Tau%60bTau%3F%4056%5C%3BD%5C7%40C%5C7C%40%3FE%5C6%3F5%5C56G6%3D%40A6CDTauU2%26C%3Dl&brid=2&brver=39&bridua=2&tstype=128&jsCallback=dvCallback_1453632733929959 necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Cache-Control: max-age=0
+Pragma: no-cache
+Content-Type: text/javascript; charset=utf-8
+Expires: 1/23/2016 10:52:14 AM
+Server: Microsoft-IIS/8.0
+X-Powered-By: ASP.NET
+Date: Sun, 24 Jan 2016 10:52:13 GMT
+ uncompressed-len 0   #

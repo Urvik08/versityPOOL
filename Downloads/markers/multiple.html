@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <title>Google Maps Multiple Markers</title>
+      <script src="http://maps.google.com/maps/api/js?sensor=false"
+              type="text/javascript"></script>
+    </head>
+    <body>
+      <div id="map" style="width: 1000px; height: 1000px;"></div>
+
+      <script type="text/javascript">
+    /*  var locations[5][2];
+      function populateDrivers(response)
+      {
+        var arr = JSON.parse(response);
+        var i; 
+         for(i=0; i< arr.length; i++)
+          {
+               locations[i][0] = arr.fname;
+               locations[i][1] = arr.lat;
+               locations[i][2] = arr.lon;   
+          }
+      }
+   /* for (var key in result)
+    {
+     if (result.hasOwnProperty(key))
+     {
+        // here you have access to
+        var MNGR_NAME = result[key].MNGR_NAME;
+        var MGR_ID = result[key].MGR_ID;
+     }
+    }*/
+        var locations = [
+          ['UCF',28.601704, -81.198235, 1],
+          ['D1', 28.582429, -81.206027, 2]
+         ];
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: new google.maps.LatLng(28.601704, -81.198235),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        var infowindow = new google.maps.InfoWindow();
+
+        var marker, i;
+
+        for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+          });
+
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+              infowindow.setContent(locations[i][0]);
+              infowindow.open(map, marker);
+              alert ('Request Sent!');
+            }
+          })(marker, i));
+        }
+      </script>
+    </body>
+    </html>

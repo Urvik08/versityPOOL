@@ -1,0 +1,27 @@
+No protocol specified
+check_gl_texture_size: Unable to open display :0
+(unity-settings-daemon:1965): GnomeDesktop-WARNING **: GL_MAX_TEXTURE_SIZE helper quit unexpectedly
+
+(unity-settings-daemon:1965): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+
+(unity-settings-daemon:1965): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(gnome-terminal:2582): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(unity-settings-daemon:1965): color-plugin-WARNING **: unable to get EDID for xrandr-VGA-0: unable to get EDID for output
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(gnome-terminal:2582): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      html, body {
+        height: 60%;
+	width: 60%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+
+ <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtdYdbUev9JhQe7zjzaE-9jKHRxgctmAI&callback=initMap">
+</script>
+  </head>
+  <body>
+    <div id="map"> <h1> hfgfgjkl </h1></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script>
+$( document ).ready(function() {
+initMap();
+});
+function initMap() {
+var uniLatLng = {lat: 28.542121, lng: -81.401333};
+  var driverLatLng = {lat: 28.582429, lng: -81.206027};
+  
+ /* var latLog = [['UCF',28.542121, -81.401333,1],
+		['Driver',28.582429,-81.206027],];
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: new google.maps.LatLng(28.542121, -81.401333),
+mapTypeId: google.maps.MapeTypeId.ROADMAP
+  });
+*/
+var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 15,
+ center: uniLatLng
+});
+
+  var map2 = new google.maps.Map(document.getElementById('map'), {
+  zoom: 15,
+ center: driverLatLng
+});
+
+//var marker,i;
+
+ /*for (i = 0; i < latLog.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(latLog[i][1], latLog[i][2]),
+            map: map
+          });*/
+
+  var marker1 = new google.maps.Marker({
+    position: uniLatLng,
+   map: map,
+    title: 'UCF'
+  });
+  var marker2 = new google.maps.Marker({
+    position: driverLatLng,
+    map: map2,
+    title: 'Driver'
+  });
+
+}
+
+   
+  
+//google.maps.event.addListener(map, 'load', initMap);
+
+</script>
+  </body>
+</html>
+

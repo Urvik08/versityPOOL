@@ -1,0 +1,20 @@
+status: 200
+content-length: 104
+via: 1.1 sumac.canonical.com:3128 (squid/2.7.STABLE7)
+content-location: https://rec.ubuntu.com/api/1.0/recommend_app/virtualbox-guest-utils/
+x-cache: MISS from sumac.canonical.com
+x-cache-lookup: HIT from sumac.canonical.com:3128
+expires: Sat, 23 Jan 2016 23:42:26 GMT
+server: Apache
+last-modified: Sat, 23 Jan 2016 23:37:26 GMT
+etag: "e1e08a19424e6a24fb73c14cafa99f6e"
+strict-transport-security: max-age=2592000
+cache-control: max-age=300
+date: Sat, 23 Jan 2016 23:37:26 GMT
+content-type: application/json; charset=utf-8
+
+{
+    "rid": "5adf2b920a85a92f16fdb85740cfa944", 
+    "data": [], 
+    "app": "virtualbox-guest-utils"
+}

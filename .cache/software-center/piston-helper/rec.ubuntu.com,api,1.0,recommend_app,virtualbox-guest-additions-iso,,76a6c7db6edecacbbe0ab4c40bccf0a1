@@ -1,0 +1,16 @@
+status: 301
+content-length: 284
+content-location: http://rec.ubuntu.com/api/1.0/recommend_app/virtualbox-guest-additions-iso/
+server: Apache
+location: https://rec.ubuntu.com/api/1.0/recommend_app/virtualbox-guest-additions-iso/
+date: Sat, 23 Jan 2016 23:38:07 GMT
+-x-permanent-redirect-url: https://rec.ubuntu.com/api/1.0/recommend_app/virtualbox-guest-additions-iso/
+content-type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://rec.ubuntu.com/api/1.0/recommend_app/virtualbox-guest-additions-iso/">here</a>.</p>
+</body></html>

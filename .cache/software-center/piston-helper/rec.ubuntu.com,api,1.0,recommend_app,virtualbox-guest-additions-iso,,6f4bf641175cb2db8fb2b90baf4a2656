@@ -1,0 +1,25 @@
+status: 200
+content-length: 203
+via: 1.1 sumac.canonical.com:3128 (squid/2.7.STABLE7)
+content-location: https://rec.ubuntu.com/api/1.0/recommend_app/virtualbox-guest-additions-iso/
+x-cache: MISS from sumac.canonical.com
+x-cache-lookup: HIT from sumac.canonical.com:3128
+expires: Sat, 23 Jan 2016 23:43:07 GMT
+server: Apache
+last-modified: Sat, 23 Jan 2016 23:38:07 GMT
+etag: "1da564f3e645da6b3f3a83c4ad4ebc90"
+strict-transport-security: max-age=2592000
+cache-control: max-age=300
+date: Sat, 23 Jan 2016 23:38:07 GMT
+content-type: application/json; charset=utf-8
+
+{
+    "rid": "da7f3a639f0f66237c7a03892ee2dc65", 
+    "data": [
+        {
+            "rating": 3.0, 
+            "package_name": "gwibber"
+        }
+    ], 
+    "app": "virtualbox-guest-additions-iso"
+}

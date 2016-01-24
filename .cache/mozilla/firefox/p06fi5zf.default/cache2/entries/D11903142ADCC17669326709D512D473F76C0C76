@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Latitude And Longitude Lookup</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="/src/css.css" type="text/css">
+
+<script language="JavaScript" type="text/javascript">
+// degrees, mins, secs to decimal degrees
+function dms_to_d(d,m,s,dir)
+{
+	//alert( "d:"+d+" m:"+m+" s:"+s );
+	d = d-0;
+	m = m-0;
+	var sign = ( dir=='W' || dir=='S' ) ? -1 : 1;
+	return (((s/60+m)/60)+d)*sign;
+}
+function d_to_dms(d,x)
+{
+	var a = new Array();
+	if(x=='Lt') {
+		a['dir'] = (d>=0)?'N':'S';
+	} else if(x=='Lg') {
+		a['dir'] = (d>=0)?'E':'W';
+	}
+	if(d<0) { d=Math.abs(d); }
+	var n = d+'';
+	var tmp = n.split(".");  if(tmp[0]=='') { tmp[0]='0' }
+	a['d'] = tmp[0]; // n
+	n = parseFloat("."+tmp[1])*60+''; // min dec
+	tmp = n.split(".");
+	a['m'] = tmp[0]; // min
+	n = parseFloat("."+tmp[1])*60+''; // sec dec
+	tmp = n.split(".");
+	a['s'] = tmp[0]; // sec
+	return a;
+}
+function convertAll(direction)
+{
+	convertLatLong(direction,"Lt");
+	convertLatLong(direction,"Lg");
+}
+function convertLatLong(direction,L)
+{
+	var f = document.lat_long_form;
+
+	if(direction=='<<') {
+		var d = f.elements['d'+L].value;
+		var m = f.elements['m'+L].value;
+		var s = f.elements['s'+L].value;
+		var tmp = f.elements['dir'+L].options;
+		var dir = tmp[tmp.selectedIndex].value;
+		var ans = rnd(dms_to_d(d,m,s,dir),4);
+		f.elements['dec'+L].value = ans;
+	} else {
+		var dec = f.elements['dec'+L].value;
+		var a = d_to_dms(dec,L);
+		f.elements['d'+L].value = isNaN(a['d'])?'0':a['d'];
+		f.elements['m'+L].value = isNaN(a['m'])?'0':a['m'];
+		f.elements['s'+L].value = isNaN(a['s'])?'0':a['s'];
+		if(a['dir']) {
+			setSelectedValue(f.elements['dir'+L],a['dir']);
+		}
+	}
+	return;
+
+}
+function rnd(v, p)
+{
+	if(rnd.arguments.length==1) { p=0; }
+	v = v * Math.pow(10,p);
+	v = Math.round(v);
+	v = v / Math.pow(10,p);
+	return v;
+}
+function setSelectedValue (select,val)
+{	for (var i = 0; i < select.options.length; i++)
+	{	if (select.options[i].value==val) {
+		 	select.options.selectedIndex=i;
+		 	break;
+		}
+	}
+}
+</script>
+
+
+</head>
+
+<body leftmargin="20" topmargin="20" marginwidth="20" marginheight="20" bgcolor="#ffffff" text="#000000" link="#006666" vlink="#006666" alink="#ff00ff" background="">
+
+<div align="center">
+
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td><div class="hdrL">
+<a href="http://www.calculatorcat.com"><img src="/images/logo.gif" width="220" height="37" border="0" alt="" /></a>
+</div></td>
+	</tr>
+	<tr>
+		<td valign="top" class="tBorder" style="padding:20px;padding-left:50px;padding-right:50px">
+		
+		<h1 class="heading1">Latitude And Longitude Lookup</h1>
+
+
+<table width="800" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td valign="top">
+Hover your mouse over the map below to find the location (latitude and longitude coordinates) of any location on earth. To zoom in or out, use the "&#43;" and "-" buttons. Click and drag to move the map. You can switch between a street map and a hybrid map using the "Map" and "Satellite" buttons. (Mobile users: The coordinates represent the <i>center</i> of the map)
+<br /><br />
+<div id="gMapLat"><b>Latitude:</b></div>
+<div id="gMapLng"><b>Longitude:</b></div>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+	window.onload = makegMap;
+function makegMap() {
+		var mapOptions = {
+			center: new google.maps.LatLng(0,0),
+			zoom: 1,
+			mapTypeId: google.maps.MapTypeId.HYBRID
+		};
+		var infoWindow = new google.maps.InfoWindow();
+		var latlngbounds = new google.maps.LatLngBounds();
+		var map = new google.maps.Map(document.getElementById("gMap"), mapOptions);
+		google.maps.event.addListener(map, 'mousemove', function (e) {
+                        document.getElementById("gMapLat").innerHTML = "<b>Latitude:</b> ".concat(Math.round(e.latLng.lat()*100000)/100000);
+                        document.getElementById("gMapLng").innerHTML = "<b>Longitude:</b> ".concat(Math.round(e.latLng.lng()*100000)/100000);
+		});
+}
+</script>
+<div id="gMap" style="width: 100%; height: 500px"></div>
+
+<p />&nbsp;<br />
+
+<b>Decimal to Minutes-Seconds Converter</b>
+<br /><br />
+The following calculator converts decimal latitude/longitude to degrees, minutes, and seconds. Note that "<b>South</b>" latitudes and "<b>West</b>" longitudes convert to <i><b>negative</b></i> decimal numbers.
+<p />
+
+		<table  cellpadding="0" cellspacing="4" border="0">
+<form name="lat_long_form">
+			<tr>
+				<td colspan="3"><span class="style2"><b>Latitude:</b></td>
+			</tr>
+			<tr>
+				<td>
+				<input type="text" class="" name="decLt" value="" size="20"> degrees
+				</td>
+				<td><b style="font-size:20px">=</b></td>
+				<td nowrap="nowrap">
+				<input type="text" class="formfield" name="dLt" value="" size="2" maxlength="3" style="width:25px;margin-right:2px">deg &nbsp;<input type="text" class="formfield" name="mLt" value="" size="2" maxlength="3" style="width:25px;margin-right:2px">min &nbsp;<input type="text" class="formfield" name="sLt" value="" size="2" style="width:25px;margin-right:2px">sec &nbsp;<select name="dirLt" class="style2">
+				<option value="N">N
+				<option value="S">S
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="padding-top:8px;border-top: 1px solid #000000"><b>Longitude:</b></td>
+			</tr>
+			<tr>
+				<td>
+				<input type="text" class="" name="decLg" value="" size="20"> degrees
+				</td>
+				<td><b style="font-size:20px">=</b></td>
+				<td nowrap="nowrap">
+				<input type="text" class="formfield" name="dLg" value="" size="2" maxlength="3" style="width:25px;margin-right:2px">deg &nbsp;<input type="text" class="formfield" name="mLg" value="" size="2" maxlength="3" style="width:25px;margin-right:2px">min &nbsp;<input type="text" class="formfield" name="sLg" value="" size="2" maxlength="3" style="width:25px;margin-right:2px">sec &nbsp;<select name="dirLg" class="style2">
+				<option value="E">E
+				<option value="W">W
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center" nowrap="nowrap">
+				<br />
+				<table cellpadding="0" cellspacing="5" border="0">
+					<tr>
+						<td valign="top"><input type="button" class="inputBtn1" name="" value="Decimal To Minutes-Seconds =>" onclick="convertAll('>>');return false;"></td>
+					</tr>
+					<tr>
+						<td><input type="button" class="inputBtn1" name="" value="<= Minutes-Seconds To Decimal" onclick="convertAll('<<');return false;"></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+</form>
+		</table>
+
+<p />&nbsp;<br />
+If you want to learn more about latitude and longitude (maps, definitions/explanations) take a look at <a href="http://worldatlas.com/aatlas/imageg.htm" target="_new">http://worldatlas.com</a>
+<p />
+Of course another cool website for amazing views of Earth is <a href="http://earth.google.com/">Google Earth</a>.
+
+		</td>
+	</tr>
+</table>
+
+
+
+		</td>
+	</tr>
+</table>
+
+
+</div>
+
+<br /><div align="center"><span class="style1" style="color:#666666">&copy; 2002-2016 CalculatorCat.com/BlueMarmot, Inc. <a href="/" style="color:#666666">Home</a> | <a href="#" onclick="openContact('cc'); return false;" style="color:#666666">Contact</a> | <a href="#" onclick="openAbout('cc'); return false;" style="color:#666666">About</a> | <a href="#" onclick="openPrivacy('cc'); return false;" style="color:#666666">Privacy</a></div>
+
+<br /><p />
+<div align="center"></div>
+
+<p />&nbsp;
+
+
+<script type='text/javascript'>
+var ssa = 'fb7dd313dcc5c2d1';
+var ssaUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'pixel.sitescout.com/iap/' + ssa;
+new Image().src=ssaUrl;
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67055721-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+/¾–x÷µ      V¤U¾V¤UÊ<<“       6:http://www.calculatorcat.com/latitude_longitude.phtml necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 24 Jan 2016 04:40:32 GMT
+Server: Apache
+Cache-Control: private
+Content-Length: 8080
+Content-Type: text/html
+ charset windows-1252 uncompressed-len 0 predictor::resource-count 38 predictor::http://www.calculatorcat.com/src/css.css 1,1,1453610430,0 predictor::http://www.calculatorcat.com/images/logo.gif 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/api/js?sensor=false 1,1,1453610430,0 predictor::http://csi.gstatic.com/csi?v=2&s=mapsapi3&v3v=23.5&action=apiboot2&e=10_1_0,10_2_0,11_1_0,11_4_0,11_5_0,11_7_0,11_8_0,11_9_0,11_10_12300076,11_11_0,11_12_0,11_13_0,11_14_U,11_15_0,11_16_0&rt=main.16 1,1,1453610430,0 predictor::http://pixel.sitescout.com/iap/fb7dd313dcc5c2d1 1,1,1453610430,0 predictor::http://www.google-analytics.com/analytics.js 1,1,1453610430,0 predictor::http://www.google-analytics.com/r/collect?v=1&_v=j40&a=411811081&t=pageview&_s=1&dl=http%3A%2F%2Fwww.calculatorcat.com%2Flatitude_longitude.phtml&dr=https%3A%2F%2Fwww.google.com&ul=en-us&de=windows-1252&dt=Latitude%20And%20Longitude%20Lookup&sd=24-bit&sr=1920x975&vp=1842x878&je=0&_u=AEAAAEABI~&jid=1801839487&cid=1151262945.1453610432&tid=UA-67055721-3&_r=1&z=1626109241 1,1,1453610430,0 predictor::http://csi.gstatic.com/csi?v=2&s=mapsapi3&v3v=23.5&action=apiboot2&e=10_1_0,10_2_0,11_1_0,11_4_0,11_5_0,11_7_0,11_8_0,11_9_0,11_10_12300076,11_11_0,11_12_0,11_13_0,11_14_U,11_15_0,11_16_0&rt=firstmap.993 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/common.js 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/map.js 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/util.js 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/infowindow.js 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/onion.js 1,1,1453610430,0 predictor::http://csi.gstatic.com/csi?v=2&s=mapsapi3&v3v=23.5&action=map2&firstmap=true&hdpi=false&mob=false&staticmap=false&size=800x500&hadviewport=true&e=10_1_0,10_2_0,11_1_0,11_4_0,11_5_0,11_7_0,11_8_0,11_9_0,11_10_12300076,11_11_0,11_12_0,11_13_0,11_14_U,11_15_0,11_16_0&rt=visreq.3326 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&1m2&1d-90&2d-180&2m2&1d90&2d180&2u1&4sen-US&5e3&6sm%40336000000&7b0&8e0&9b0&callback=_xdc_._uxvbd0&token=31488 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/stats.js 1,1,1453610430,0 predictor::http://maps.gstatic.com/mapfiles/transparent.png 1,1,1453610430,0 predictor::http://khm0.googleapis.com/kh?v=194&hl=en-US&&x=0&y=0&z=1 1,1,1453610430,0 predictor::http://khm0.googleapis.com/kh?v=194&hl=en-US&&x=0&y=1&z=1 1,1,1453610430,0 predictor::http://khm1.googleapis.com/kh?v=194&hl=en-US&&x=1&y=0&z=1 1,1,1453610430,0 predictor::http://khm1.googleapis.com/kh?v=194&hl=en-US&&x=1&y=1&z=1 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/controls.js 1,1,1453610430,0 predictor::http://csi.gstatic.com/csi?v=2&s=mapsapi3&v3v=23.5&action=map2&firstmap=true&hdpi=false&mob=false&staticmap=false&size=800x500&hadviewport=true&e=10_1_0,10_2_0,11_1_0,11_4_0,11_5_0,11_7_0,11_8_0,11_9_0,11_10_12300076,11_11_0,11_12_0,11_13_0,11_14_U,11_15_0,11_16_0&rt=visres.3697 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/gen_204?target=api&ev=api_viewport&cad=host:www.calculatorcat.com,v:23,r:1,mt:h,c:0%2C0,sp:169.34703x360.00000,size:800x500,relsize:0.25,token:5lwappv15s,src:apiv3,ts:s24fbc 1,1,1453610430,0 predictor::http://fonts.googleapis.com/css?family=Roboto:300,400,500,700 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i1!2i0!3i0!4i256!2m3!1e0!2sm!3i336004973!3m9!2sen-US!3sUS!5e18!12m1!1e50!12m3!1e37!2m1!1ssmartmaps!4e0&token=78257 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i1!2i0!3i1!4i256!2m3!1e0!2sm!3i336004973!3m9!2sen-US!3sUS!5e18!12m1!1e50!12m3!1e37!2m1!1ssmartmaps!4e0&token=114278 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i1!2i1!3i0!4i256!2m3!1e0!2sm!3i336004973!3m9!2sen-US!3sUS!5e18!12m1!1e50!12m3!1e37!2m1!1ssmartmaps!4e0&token=98000 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i1!2i1!3i1!4i256!2m3!1e0!2sm!3i336004973!3m9!2sen-US!3sUS!5e18!12m1!1e50!12m3!1e37!2m1!1ssmartmaps!4e0&token=2950 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps-api-v3/api/js/23/5/marker.js 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i1!2i0!3i0!1m4!1m3!1i1!2i0!3i1!1m4!1m3!1i1!2i1!3i0!1m4!1m3!1i1!2i1!3i1!2m3!1e0!2sm!3i336004973!3m9!2sen-US!3sUS!5e18!12m1!1e50!12m3!1e37!2m1!1ssmartmaps!4e3!12m1!5b1&callback=_xdc_._uo0tpm&token=70986 1,1,1453610430,0 predictor::http://maps.gstatic.com/mapfiles/api-3/images/google_white5.png 1,1,1453610430,0 predictor::http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2 1,1,1453610430,0 predictor::http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fwww.calculatorcat.com%2Flatitude_longitude.phtml&callback=_xdc_._j2nh9p&token=114630 1,1,1453610430,0 predictor::http://csi.gstatic.com/csi?v=2&s=mapsapi3&v3v=23.5&action=map2&firstmap=true&hdpi=false&mob=false&staticmap=false&size=800x500&hadviewport=true&e=10_1_0,10_2_0,11_1_0,11_4_0,11_5_0,11_7_0,11_8_0,11_9_0,11_10_12300076,11_11_0,11_12_0,11_13_0,11_14_U,11_15_0,11_16_0&rt=firsttile.4738,firstpixel.4738 1,1,1453610430,0 predictor::http://csi.gstatic.com/csi?v=2&s=mapsapi3&v3v=23.5&action=map2&firstmap=true&hdpi=false&mob=false&staticmap=false&size=800x500&hadviewport=true&e=10_1_0,10_2_0,11_1_0,11_4_0,11_5_0,11_7_0,11_8_0,11_9_0,11_10_12300076,11_11_0,11_12_0,11_13_0,11_14_U,11_15_0,11_16_0&rt=tilesloaded.4753,allpixels.4753 1,1,1453610430,0 predictor::http://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttp%3A%2F%2Fwww.calculatorcat.com%2Flatitude_longitude.phtml&5e0&6u1&7ss24jxo&callback=_xdc_._d8457h&token=55675 1,1,1453610430,0   

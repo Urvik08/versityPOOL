@@ -1,0 +1,363 @@
+#change_wrap_div{ background-color: #ffffff}  #change_wrap_div{ background-repeat: repeat-y} body{ background-repeat: repeat-x} #footer, #footer .contacts-widget p, #sub-footer{ color: #ffffff} #footer{ background-color: #222222} #sub-footer {background:none;}#footer{ background-repeat: no-repeat} body{color: #0a0a0a}
+	a.back:hover,
+	.button:hover, .submitbutton:hover,
+	.button-primary:hover,
+	.btn:hover,
+	.buttons .button.checkout, #commentform #submit,
+	.service-icon:hover span,
+	.tags-widget a:hover,
+	.comment-author a.comment-reply-link:hover,
+	.feature-box.al-center:hover .icon,
+	.feature-box.al-left:hover .icon,
+	.feature-box.al-right:hover .icon,
+	#open-top-panel:hover, #open-top-panel.active,
+	ul.pagination li a.pagination:hover, .page-nav .older:hover,
+	ul.pagination li .pagination.current
+	{
+	border-color: #ffcc00;
+	}
+
+	h3 span, a,
+	.footer-menu a:hover,
+	a.back:hover,
+	#top-menu>ul>li:hover .tile-icon,
+	.recent-block .tabs.horisontal dd a:hover,
+	.recent-block .tabs.horisontal dd.active a,
+	.dopinfo a.comments, .dopinfo a:hover,
+	.entry-title a:hover,
+	.post header > h3 a:hover,
+	.widget_crum_galleries_widget h4.box-name a:hover,
+	.menu-item-wrap:hover:before,
+	.filter li a:hover, .filter li.active a,
+	.feature-box.al-center:hover .icon,
+	.feature-box.al-left:hover .icon,
+	.feature-box.al-right:hover .icon,
+	.backtotop,
+	.share-icons a:hover,
+	#open-top-panel:hover, #open-top-panel.active,
+	#footer a:hover,
+	.menu-primary-navigation > li > a:hover > i,
+	.menu-primary-navigation > li.active > a,
+	.menu-primary-navigation > li:hover > a,
+	.menu-primary-navigation li > .megamenu a:hover,
+	ul.pagination li a.pagination:hover, .page-nav .older:hover,
+	ul.pagination li .pagination.current,
+	.woocommerce table.cart a.remove:hover
+	{
+	color: #ffcc00;
+	}
+
+
+	#header .menu > li >ul>li>.menu-item-wrap>a:hover,
+	#header .menu > li > ul > li >ul>li>.menu-item-wrap>a:hover,
+	#header .menu > li>ul>li.current-menu-item>.menu-item-wrap>a,
+
+	.to-action-block,
+	.tabs.vertical dd.active,
+	.tabs.vertical li.active,
+	#top-footer,
+	#feedburner_subscribe input[type="submit"],
+	div.progress .meter,
+	.crum_stiky_news .blocks-label,
+	.page-nav .newer:hover,
+	.page-nav span:hover a,
+	.project-title a:hover,
+	#top-panel,
+	.button:hover, .submitbutton:hover,
+	.button-primary:hover,
+	.btn:hover,
+	.buttons .button.checkout, #commentform #submit,
+	.service-icon:hover span,
+	.tags-widget a:hover,
+	.comment-author a.comment-reply-link:hover,
+	.slider-nav a.active,
+	#top-panel .top-panel-inner,
+	#open-top-panel:hover, #open-top-panel.active,
+	.pricing-table .title,
+	.blue-circle,
+	.info-item.clickable:hover,
+	.styled-widget-list > li:hover,
+	.shop-category-widget li a:hover, .category-widget li a:hover, .widget_nav_menu li a:hover, .widget_nav_menu li.current-menu-item>a,
+	.menu-primary-navigation > li.showhide, .menu-primary-navigation ul.dropdown li:hover > a,
+	.menu-primary-navigationli > .megamenu form input[type="submit"]:hover,
+	.button.single_add_to_cart_button:focus
+	{
+	background-color: #ffcc00;
+	}
+
+	.menu-primary-navigation li > .megamenu form input[type="text"]:focus, .menu-primary-navigation li > .megamenu form textarea:focus
+	{
+	border-color: #ffcc00;
+	}
+
+	ul.accordion > li.active > div.title h6
+	{
+	border-bottom: 3px solid #ffcc00;
+	}
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active, .wpb_accordion .ui-accordion .ui-accordion-header-active, .tabs dd.active a, .tabs li.active a{
+	border-top: 3px solid #ffcc00;
+	}
+
+	.backtotop {
+	border: 3px solid #ffcc00;
+	}
+	.pricing-table .title:after {
+	border-top-color: #ffcc00;
+	}
+
+	.entry-thumb:hover .hover-box {
+	background: rgba(255,204,0, .8);
+	}
+
+
+
+	/*Secondary colors*/
+
+	a:hover,
+	ul.accordion > li.active > div.title .icon_wrap .icon,
+	#open-top-panel:before
+	{
+	color: #dbaa26;
+	}
+
+	ul.accordion > li.active > div.title .icon_wrap {
+	border-bottom: 3px solid #dbaa26;
+	}
+	.hover-box:after {
+	border-top-color: #dbaa26;
+	}
+
+	#open-top-panel {
+	border: 3px solid #dbaa26;
+	}
+
+	.backtotop:hover,
+	#stuning-header h1, #stuning-header a.back:hover,
+	#stuning-header a.back:before:hover,
+	#stuning-header .breadcrumbs a:hover
+	{
+	color: #dbaa26;
+	border-color: #dbaa26;
+	}
+	.extra-links a:hover {
+	border-color: #dbaa26;
+	background-color:#dbaa26;
+	}
+	.buttons .button.checkout:hover, #commentform #submit {
+	background-color: #dbaa26;
+	border-color: #dbaa26;
+	}
+
+	::-moz-selection {
+	background-color: #dbaa26;
+	color: #fff;
+	}
+
+	::selection {
+	background-color: #dbaa26;
+	color: #fff;
+	}
+
+
+.widget-title{content: "linecon-globe"; ie: "linecon-globe"}.widget_crum_recent_posts .widget-title{content: "linecon-doc"; ie:"linecon-doc";}.widget_rss_mail_subscribe .widget-title{content: "awesome-rss";ie: "awesome-rss"}.widget_recent_block .widget-title, .widget_crum_recent_desc .widget-title, .recent-block .widget-title{content: "linecon-camera"; ie:"linecon-camera" }.widget_crum_news_cat .widget-title, .widget_crum_news_row .widget-title, .widget_crum_news_desc .widget-title{content: "linecon-note"; ie: "linecon-note"}.widget_list_widget .widget-title{content: "linecon-tag"; ie: "linecon-tag"}.widget_crum_testimonial_widget .widget-title{content: "linecon-thumbs-up"; ie: "linecon-thumbs-up"}.widget_crum_partners_widget .widget-title{content: "linecon-globe"; ie: "linecon-globe"}.widget_crum-text-widget .widget-title{content: "linecon-clock"; ie:"linecon-clock"}.widget_roots_vcard_widget .widget-title{content: "linecon-diamond"; ie:"linecon-diamond"}.widget_crum_tags_widget .widget-title{content: "linecon-tag"; ie:"linecon-tag"}.widget_crum_crum_widget_tabs .widget-title{content: "linecon-calendar"; ie: "linecon-calendar"}.widget_gallery_widget .widget-title{content: "linecon-paper-plane"; ie: "linecon-paper-plane"}.widget_twitter-widget .widget-title{content: "moon-twitter"; ie:"moon-twitter"}.widget_crum_icon_categories .widget-title{content: "awesome-list-ul"; ie:"awesome-list-ul"}.widget_facebook_widget .widget-title{content: "moon-facebook"; ie:"moon-facebook"}.widget_crum_widgets_video .widget-title{content: "linecon-videocam"; ie:"linecon-videocam";}.widget_crum_widget_v_accordion .widget-title{content: "linecon-lightbulb"; ie:"linecon-lightbulb";}.widget_crum_galleries_widget .widget-title{content: "linecon-photo"; ie:"linecon-photo";}.widget_about_author_widget .widget-title{content: "linecon-sound"; ie:"linecon-sound";}.widget_skills_widget .widget-title{content: "linecon-params"; ie:"linecon-params";}.widget_crum_shortcode_widget .widget-title{content: "linecon-diamond";ie:"linecon-diamond"}.widget_crum_widget_features .widget-title{content: "linecon-tv"; ie:"linecon-tv";}.widget_wp_sidebarlogin .widget-title{content: "linecon-diamond"; ie:"linecon-diamond";}.widget_shopping_cart .widget-title{content: "linecon-diamond"; ie:"linecon-diamond";}.menu-primary-navigation{
+width: 100%;
+}
+.menu-primary-navigation > li > a > i {
+}
+.menu-primary-navigation li a .name{
+font-size: 1.1em;
+font-weight: 500;
+}
+.menu-primary-navigation > li > a > i{
+        color:#ffcc00;
+}
+::selection {
+  background-color: #fff;
+  color: #777;
+  opacity: 0.9;
+   filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+#stuning-header {
+  height: 30%;
+  padding-top: 0px;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+#page-title {
+  position: relative;
+  overflow: hidden;
+  padding: 0 55px 10px;
+  margin: 10px 0 10px;
+  text-align: left;
+}
+.vc_single_image-img:hover{
+    opacity: 4.0;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+#footer{
+margin: 0 auto; 
+text-align: center;
+color:#fff !important;
+}
+.three, .row .three {
+  width: 30%;
+}
+#stuning-header h1 {
+  color: #ffcc00;
+}
+#stuning-header a, #stuning-header .breadcrumbs span.del, #stuning-header .breadcrumbs a, #stuning-header .breadcrumbs{
+ color: #fff;
+}
+
+#stuning-header a.back, #stuning-header a.back:before {
+  border-color: #fff;
+}
+#stuning-header a.back, #stuning-header a.back: {
+  border-color: #eebb00;
+}
+p{
+	line-height: 130%; 
+	letter-spacing: 0.3px; 
+	font-size: 15px;
+}
+#foot{
+    color:#fff;
+}
+.vc_btn3.vc_btn3-color-grey, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-flat{
+    background-color:#ffcc00;
+    color:#fff;
+    font-weight:500;
+}
+.vc_btn3.vc_btn3-color-grey, .vc_btn3.vc_btn3-color-grey.vc_btn3-style-flat:hover{
+    background-color:#eebb00;
+    color:#fff;
+}
+.vc_toggle_color_grey.vc_toggle_color_inverted .vc_toggle_icon{
+          border-color: #ffcc00;
+}
+.vc_toggle_color_grey.vc_toggle_color_inverted .vc_toggle_icon::before, .vc_toggle_color_grey.vc_toggle_color_inverted .vc_toggle_icon::after {
+               background-color: #ffcc00;
+}
+a{
+                font-weight: 500;
+                color: #bc9b6a;
+}
+        .menu-primary-navigation > li > a > i:hover{
+        color:#dbaa26;
+}
+/*----------HEADERS----------*/
+h1{
+         color: #000;
+}
+h3{
+          color:#000;
+}
+h4{
+           color: #000;
+}
+.my h1 {
+           overflow: hidden;
+           text-align: center;
+          
+}
+.my h1:before,
+.my h1:after {
+           padding: 0 20px;
+           background-color:#eee;
+           content: "";
+          display: inline-block;
+          height: .05em; /****space between my lines****/
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+          margin-bottom: .15em;
+}
+.my h1:before {
+          right: 0.7em;
+          margin-left: -50%;
+}
+.my h1:after {
+          left: 0.7em;
+          margin-right: -50%;
+}
+.main h2 {
+           overflow: hidden;
+           text-align: center;
+          
+}
+.main h2:before,
+.main h2:after {
+           padding: 0 20px;
+           background-color:#eee;
+           content: "";
+          display: inline-block;
+          height: .05em; /****space between my lines****/
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+          margin-bottom: .15em;
+}
+.main h2:before {
+          right: 0.7em;
+          margin-left: -50%;
+}
+.main h2:after {
+          left: 0.7em;
+          margin-right: -50%;
+}
+/*----------PAGE----------*/
+.info{ 
+    width: 93%;
+    margin: 0 auto;
+}
+.contact{ 
+    width: 130%;
+}
+/*----------SLIDER----------*/
+.button1{
+    color: #000;
+    border-color: #ffcc00;
+    background: #ffcc00;
+    /* -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08); */
+    /* box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08); */
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 26px;
+    height: 30px;
+    margin: 0;
+    padding: 3px 30px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    /* -webkit-border-radius: 3px; */
+    /* border-radius: 3px; */
+    font-weight: 600;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+.button1:hover{
+    text-decoration: none;
+    color: #000;
+   background-color: #eebb00;
+}
+.ls-slide a:hover{
+    /* color: #blue; */ 
+    /* text-decoration: underline;*/
+    color: #000;
+    text-decoration: none;
+}
+yú#Ôk           V¤!;<-V¥U‹   V:https://www.international.ucf.edu/wp-content/themes/Glider/css/options.css?1452807702 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: text/css
+Last-Modified: Thu, 14 Jan 2016 21:41:42 GMT
+Accept-Ranges: bytes
+Etag: "5e2a9d5b144fd11:0"
+Server: Microsoft-IIS/7.5
+Date: Sun, 24 Jan 2016 00:56:27 GMT
+Content-Length: 11218
+ uncompressed-len 0   +Ò

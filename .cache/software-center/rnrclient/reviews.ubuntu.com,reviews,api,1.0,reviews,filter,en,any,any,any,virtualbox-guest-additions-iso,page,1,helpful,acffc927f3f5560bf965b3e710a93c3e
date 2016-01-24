@@ -1,0 +1,91 @@
+status: 200
+content-length: 2995
+expires: Sat, 23 Jan 2016 23:43:08 GMT
+content-location: https://reviews.ubuntu.com/reviews/api/1.0/reviews/filter/en/any/any/any/virtualbox-guest-additions-iso/page/1/helpful/
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+vary: Accept
+server: gunicorn/19.3.0
+last-modified: Sat, 23 Jan 2016 23:38:08 GMT
+x-bzr-revision-number: 313
+cache-control: max-age=300
+date: Sat, 23 Jan 2016 23:38:08 GMT
+content-type: application/json; charset=utf-8
+
+[
+    {
+        "origin": "ubuntu", 
+        "rating": 5, 
+        "hide": false, 
+        "app_name": "", 
+        "language": "en", 
+        "reviewer_username": "rLGrAsy", 
+        "usefulness_total": 1, 
+        "usefulness_favorable": 0, 
+        "review_text": "How do I run it (I sound dumb right now, lol)", 
+        "date_deleted": null, 
+        "summary": "How do I Run the program?", 
+        "version": "4.3.10-1", 
+        "id": 91220, 
+        "date_created": "2014-10-13 03:01:55", 
+        "reviewer_displayname": "love", 
+        "package_name": "virtualbox-guest-additions-iso", 
+        "distroseries": "trusty"
+    }, 
+    {
+        "origin": "ubuntu", 
+        "rating": 5, 
+        "hide": false, 
+        "app_name": "", 
+        "language": "en", 
+        "reviewer_username": "nathanlee2", 
+        "usefulness_total": 6, 
+        "usefulness_favorable": 6, 
+        "review_text": "I used Virtualbox to use Windows Apps for class. When installing guest additions through the application itself, it comes up with an error on Oneiric (as of 15 november 2011).\n\nInstalling the .iso image through the software center, however, does work. I now have flexible resolutions, shared folders, and all the other advantages that guest additions bring.", 
+        "date_deleted": null, 
+        "summary": "Works", 
+        "version": "4.1.2-1", 
+        "id": 29983, 
+        "date_created": "2011-11-15 21:34:26", 
+        "reviewer_displayname": "nathanlee2@gmail.com", 
+        "package_name": "virtualbox-guest-additions-iso", 
+        "distroseries": "oneiric"
+    }, 
+    {
+        "origin": "ubuntu", 
+        "rating": 4, 
+        "hide": false, 
+        "app_name": "", 
+        "language": "en", 
+        "reviewer_username": "coolleo83", 
+        "usefulness_total": 2, 
+        "usefulness_favorable": 2, 
+        "review_text": "Worked like a charm. Simple click and next process. Now virtualBox is integrated seamlessly with the Host machine. ", 
+        "date_deleted": null, 
+        "summary": "Worked perfect.", 
+        "version": "4.1.2-1", 
+        "id": 51838, 
+        "date_created": "2012-07-11 10:19:54", 
+        "reviewer_displayname": "CooL LeO", 
+        "package_name": "virtualbox-guest-additions-iso", 
+        "distroseries": "oneiric"
+    }, 
+    {
+        "origin": "ubuntu", 
+        "rating": 5, 
+        "hide": false, 
+        "app_name": "", 
+        "language": "en", 
+        "reviewer_username": "alanmcruickshank", 
+        "usefulness_total": 1, 
+        "usefulness_favorable": 1, 
+        "review_text": "Works perfectly. Expecially given the integrated download button returns an error on Oneiric.", 
+        "date_deleted": null, 
+        "summary": "Excellent and works", 
+        "version": "4.1.2-1", 
+        "id": 32065, 
+        "date_created": "2011-12-04 23:05:41", 
+        "reviewer_displayname": "Alan Cruickshank", 
+        "package_name": "virtualbox-guest-additions-iso", 
+        "distroseries": "oneiric"
+    }
+]

@@ -1,0 +1,447 @@
+Activating service name='org.gtk.vfs.Daemon'
+Successfully activated service 'org.gtk.vfs.Daemon'
+Activating service name='org.ayatana.bamf'
+Successfully activated service 'org.ayatana.bamf'
+Activating service name='com.canonical.indicator.keyboard'
+Activating service name='org.freedesktop.Notifications'
+Activating service name='org.gnome.ScreenSaver'
+Activating service name='ca.desrt.dconf'
+Activating service name='org.gnome.evolution.dataserver.Sources2'
+Successfully activated service 'ca.desrt.dconf'
+Successfully activated service 'org.freedesktop.Notifications'
+Successfully activated service 'org.gnome.ScreenSaver'
+Successfully activated service 'com.canonical.indicator.keyboard'
+Activating service name='org.gtk.Private.UDisks2VolumeMonitor'
+Activating service name='org.gnome.GConf'
+Successfully activated service 'org.gnome.GConf'
+Successfully activated service 'org.gtk.Private.UDisks2VolumeMonitor'
+Activating service name='org.gtk.Private.MTPVolumeMonitor'
+Successfully activated service 'org.gtk.Private.MTPVolumeMonitor'
+Activating service name='org.gtk.Private.AfcVolumeMonitor'
+Successfully activated service 'org.gtk.Private.AfcVolumeMonitor'
+Activating service name='org.gtk.Private.GPhoto2VolumeMonitor'
+module-cache-reaper-Message: Scanning data directories
+module-cache-reaper-Message: Scanning cache directories
+Successfully activated service 'org.gtk.Private.GPhoto2VolumeMonitor'
+Successfully activated service 'org.gnome.evolution.dataserver.Sources2'
+Activating service name='org.gnome.evolution.dataserver.Calendar4'
+Successfully activated service 'org.gnome.evolution.dataserver.Calendar4'
+** Message: Lost the name, shutting down.
+Activating service name='org.freedesktop.Telepathy.AccountManager'
+Successfully activated service 'org.freedesktop.Telepathy.AccountManager'
+Activating service name='com.canonical.indicators.webcredentials'
+Successfully activated service 'com.canonical.indicators.webcredentials'
+Activating service name='com.canonical.Unity.Webapps.Service'
+Successfully activated service 'com.canonical.Unity.Webapps.Service'
+Activating service name='org.gnome.zeitgeist.Engine'
+Activating service name='org.gnome.zeitgeist.SimpleIndexer'
+Successfully activated service 'org.gnome.zeitgeist.Engine'
+
+(zeitgeist-datahub:2352): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(zeitgeist-datahub:2352): GLib-GObject-CRITICAL **: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+Successfully activated service 'org.gnome.zeitgeist.SimpleIndexer'
+** Message: Investigating webapp: unity-webapps-common 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-doc 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-examples 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-service 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-amazoncloudreader 
+
+** Message: Investigating webapp: unity-webapps-bbcnews 
+
+** Message: Investigating webapp: unity-webapps-cnn-news 
+
+** Message: Investigating webapp: unity-webapps-deezer 
+
+** Message: Investigating webapp: unity-webapps-dev 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-deviantart 
+
+** Message: Investigating webapp: unity-webapps-facebookmessenger 
+
+** Message: Investigating webapp: unity-webapps-googlenews 
+
+** Message: Investigating webapp: unity-webapps-googleplusgames 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-grooveshark 
+
+** Message: Investigating webapp: unity-webapps-hulu-player 
+
+** Message: Investigating webapp: unity-webapps-lastfm-radio 
+
+** Message: Investigating webapp: unity-webapps-launchpad 
+
+** Message: Investigating webapp: unity-webapps-librefm 
+
+** Message: Investigating webapp: unity-webapps-linkedin 
+
+** Message: Investigating webapp: unity-webapps-mail-ru 
+
+** Message: Investigating webapp: unity-webapps-newsblur 
+
+** Message: Investigating webapp: unity-webapps-pandora 
+
+** Message: Investigating webapp: unity-webapps-pandora-com 
+
+** Message: Investigating webapp: unity-webapps-qml-autopilot 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qq-mail 
+
+** Message: Investigating webapp: unity-webapps-reddit 
+
+** Message: Investigating webapp: unity-webapps-tumblr 
+
+** Message: Investigating webapp: unity-webapps-twitter 
+
+** Message: Investigating webapp: unity-webapps-vkcom 
+
+** Message: Investigating webapp: unity-webapps-wordpress 
+
+** Message: Investigating webapp: unity-webapps-wordpress-com 
+
+** Message: Investigating webapp: unity-webapps-yahoonews 
+
+** Message: Investigating webapp: unity-webapps-yandex-music 
+
+** Message: Investigating webapp: unity-webapps-yandexmail 
+
+** Message: Investigating webapp: unity-webapps-yandexmusic 
+
+** Message: Investigating webapp: unity-webapps-yandexnews 
+
+** Message: Investigating webapp: unity-webapps-qml 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-examples 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-service 
+
+
+** (process:2329): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-gmail 
+
+** Message: Investigating webapp: unity-webapps-googlecalendar 
+
+** Message: Investigating webapp: unity-webapps-googledocs 
+
+** Message: Investigating webapp: unity-webapps-googleplus 
+
+** Message: Investigating webapp: unity-webapps-livemail 
+
+** Message: Investigating webapp: unity-webapps-yahoomail 
+
+** Message: Investigating webapp: unity-webapps-youtube 
+
+Activating service name='org.gtk.vfs.Metadata'
+Successfully activated service 'org.gtk.vfs.Metadata'
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+Activating service name='com.canonical.Unity.Scope.Home'
+Successfully activated service 'com.canonical.Unity.Scope.Home'
+
+(unity-scope-home:2518): unity-scope-home-WARNING **: platform-info.vala:112: Unable to read SIM properties: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files
+Activating service name='com.canonical.Unity.Scope.Applications'
+Activating service name='com.canonical.Unity.Scope.LocalFiles'
+Activating service name='com.canonical.Unity.Scope.File.Gdrive'
+
+(process:2534): unity-files-daemon-WARNING **: folder.vala:65: Failed to read favorites: Failed to open file '/home/urvik/.gtk-bookmarks': No such file or directory
+Successfully activated service 'com.canonical.Unity.Scope.LocalFiles'
+Successfully activated service 'com.canonical.Unity.Scope.File.Gdrive'
+Successfully activated service 'com.canonical.Unity.Scope.Applications'
+Activating service name='com.canonical.Unity.Scope.Music'
+Successfully activated service 'com.canonical.Unity.Scope.Music'
+
+(unity-music-daemon:2560): unity-music-daemon-WARNING **: rhythmbox-collection.vala:510: Unable to open album-art DB!
+
+(unity-music-daemon:2560): unity-music-daemon-WARNING **: rhythmbox-collection.vala:574: Error while parsing rhythmbox DB: Error opening file: No such file or directory
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+(unity-scope-home:2518): Json-CRITICAL **: json_object_get_object_member: assertion 'node != NULL' failed
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/urvik/.cache/oneconf/ef350090edb7037c464cdb8e56a40132/other_hosts'
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: downloads-directory-provider.vala:120: Couldn't process /home/urvik/Downloads/todoAPIjs-master (2): Error when getting information for file '/home/urvik/Downloads/todoAPIjs-master (2)': No such file or directory
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+Activating service name='com.canonical.Unity.Scope.File.Gdrive'
+Successfully activated service 'com.canonical.Unity.Scope.File.Gdrive'
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+module-cache-reaper-Message: Reaping abandoned data directories
+module-cache-reaper-Message: Reaping abandoned cache directories
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+Activating service name='org.freedesktop.PackageKit'
+INFO:Starting service
+Successfully activated service 'org.freedesktop.PackageKit'
+DEBUG:Checking for inactivity (30s)
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/multiple.html" was not found, exec: sublime_text, mime_type: text/html
+DEBUG:Checking for inactivity (60s)
+DEBUG:Checking for inactivity (90s)
+DEBUG:Checking for inactivity (120s)
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/multiple.html" was not found, exec: sublime_text, mime_type: text/html
+DEBUG:Checking for inactivity (150s)
+DEBUG:Checking for inactivity (180s)
+INFO:Shutting down because of inactivity
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/multi_with_directions.html" was not found, exec: sublime_text, mime_type: text/html
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: zeitgeist-datahub.vala:212: Error during inserting events: GDBus.Error:org.gnome.zeitgeist.EngineError.InvalidArgument: Incomplete event: interpretation, manifestation and actor are required
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/todoAPIjs-master/routes/index.js" was not found, exec: soffice, mime_type: application/javascript
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+
+** (zeitgeist-fts:2353): WARNING **: Unable to get info on application://nautilus-autostart.desktop
+
+** (zeitgeist-datahub:2352): WARNING **: recent-manager-provider.vala:132: Desktop file for "file:///home/urvik/Downloads/markers/lat_long.cc" was not found, exec: sublime_text, mime_type: text/x-c++src
+Activating service name='com.canonical.Unity.Scope.File.Gdrive'
+Successfully activated service 'com.canonical.Unity.Scope.File.Gdrive'
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/urvik/.cache/oneconf/ef350090edb7037c464cdb8e56a40132/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
